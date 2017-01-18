@@ -1,4 +1,9 @@
-* Item 1
-* Item 2
-  * Item 2a
-  * Item 2b
+**Aihe:** Oraakkelibotti joka osaa matematiikkaa ja ehkä jotain muutakin.
+
+**Käyttäjät:** Kuka tahansa tylsistynyt, mutta helposti viihdytettävä ihminen.
+
+**Kaikkien käyttäjien toiminnot:**
+
+1. Kysy kyllä tai ei-kysymys
+2. Anna matemaattinen lauseke
+* Voi käyttää plus-, miinus-, kerto- ja jakomerkkejä sekä sulkuja [eli +, -, *, /, (, )]. Desimaaliluvut voi merkitä joko pisteellä tai pilkulla.
