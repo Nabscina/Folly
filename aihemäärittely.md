@@ -4,6 +4,6 @@
 
 **Kaikkien käyttäjien toiminnot:**
 
-1. Kysy kyllä tai ei-kysymys
-2. Anna matemaattinen lauseke
-* Voi käyttää plus-, miinus-, kerto- ja jakomerkkejä sekä sulkuja [eli +, -, *, /, (, )]. Desimaaliluvut voi merkitä joko pisteellä tai pilkulla.
+* Kysy kyllä tai ei-kysymys
+* Anna matemaattinen lauseke
+  * Voi käyttää plus-, miinus-, kerto- ja jakomerkkejä sekä sulkuja [eli +, -, *, /, (, )]. Desimaaliluvut voi merkitä joko pisteellä tai pilkulla.
