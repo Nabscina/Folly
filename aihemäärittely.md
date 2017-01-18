@@ -6,4 +6,4 @@
 
 * Kysy kyllä tai ei-kysymys
 * Anna matemaattinen lauseke
-  * Voi käyttää plus-, miinus-, kerto- ja jakomerkkejä sekä sulkuja [eli +, -, *, /, (, )]. Desimaaliluvut voi merkitä joko pisteellä tai pilkulla.
+  * Voi käyttää plus-, miinus-, kerto- ja jakomerkkejä sekä sulkuja [eli +, -, *, /, (, )]. Desimaalilukujen merkitsemisessä voi käyttää joko pistettä tai pilkkua.
