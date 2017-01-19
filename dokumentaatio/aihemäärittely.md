@@ -1,4 +1,4 @@
-**Aihe:** Oraakkelibotti joka osaa matematiikkaa ja ehkä jotain muutakin.
+**Aihe:** Oraakkelibotti joka osaa matematiikkaa ja ehkä (varmasti) jotain muutakin. "Folly" on eräs punertava värisävy. Sille on myös suomenkielinen vastine, nimittäin "typeryys".
 
 **Käyttäjät:** Kuka tahansa tylsistynyt, mutta helposti viihdytettävä ihminen.
 
