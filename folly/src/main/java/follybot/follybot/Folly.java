@@ -21,8 +21,8 @@ public class Folly {
         this.answer = a;
     }
 
-    public String respond(String answer) {
+    public String respond() {
 
-        return "Folly: " + answer;
+        return "Folly: " + this.answer;
     }
 }
