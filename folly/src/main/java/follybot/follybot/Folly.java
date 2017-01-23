@@ -3,12 +3,14 @@ package follybot.follybot;
 public class Folly {
 
     private String name;
-    private String answer;
+
+    private ResponseLogic rl;
 
     public Folly() {
 
         this.name = "folly";
-        this.answer = "What's your name?";
+
+        this.rl = new ResponseLogic();
     }
 
     public String getName() {
@@ -16,13 +18,19 @@ public class Folly {
         return this.name;
     }
 
-    public void setAnswer(String a) {
+    public void respond(String q) {
 
-        this.answer = a;
+        System.out.println("Folly: " + rl.respond(q));
     }
 
-    public String respond() {
+    public String respondToName(String name) {
 
-        return "Folly: " + this.answer;
+        if (rl.needsChanging(name)) {
+            String newName = rl.newName();
+            System.out.println("Folly: " + rl.respondToEqualName(newName));
+            return newName;
+        }
+        System.out.println("Folly: " + rl.respondToUniqueName(name));
+        return name;
     }
 }

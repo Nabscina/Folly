@@ -3,23 +3,10 @@ package follybot.follybot;
 public class Human {
 
     private String name;
-    private String question;
 
     public Human(String name) {
 
-        if (name.toLowerCase().equals("folly")) {
-            ResponseBank rb = new ResponseBank();
-            this.name = rb.returnAName();
-        } else {
-            this.name = name;
-        }
-
-        this.question = "";
-    }
-
-    public void ask(String q) {
-
-        this.question = q;
+        this.name = name;
     }
 
     public String getName() {
@@ -27,8 +14,8 @@ public class Human {
         return this.name;
     }
 
-    public String getQuestion() {
+    public void setName(String name) {
 
-        return this.question;
+        this.name = name;
     }
 }
