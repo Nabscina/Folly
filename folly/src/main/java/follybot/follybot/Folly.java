@@ -8,7 +8,7 @@ public class Folly {
     public Folly() {
 
         this.name = "folly";
-        this.answer = "";
+        this.answer = "What's your name?";
     }
 
     public String getName() {
