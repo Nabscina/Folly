@@ -1,4 +1,4 @@
-package follybot.follybot;
+package follybot.response;
 
 public class ResponseLogic {
 

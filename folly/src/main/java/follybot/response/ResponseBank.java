@@ -1,4 +1,4 @@
-package follybot.follybot;
+package follybot.response;
 
 import java.util.ArrayList;
 import java.util.Collections;

@@ -1,5 +1,7 @@
 package follybot.follybot;
 
+import follybot.response.ResponseLogic;
+
 public class Folly {
 
     private String name;
