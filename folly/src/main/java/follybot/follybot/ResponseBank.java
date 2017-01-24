@@ -20,15 +20,15 @@ public class ResponseBank {
     public void addNames() {
 
         if (names.isEmpty()) {
-            Collections.addAll(names, "Craig", "Human #1", "Susie");
+            Collections.addAll(names, "Craig", "Bobby", "Susie");
         }
     }
 
     public void addEquals() {
 
         equals.add("I'm already Folly. From now on, your name is " + humanName + ".");
-        equals.add("You can't be Folly. I'm Folly. You can be " + humanName + ".");
-        equals.add("I don't think so, " + humanName + ".");
+        equals.add("You can't be Folly. I'm Folly. You can be \"" + humanName + "\" instead.");
+        equals.add("I'm just gonna call you " + humanName + ".");
     }
 
     public void addUniques() {

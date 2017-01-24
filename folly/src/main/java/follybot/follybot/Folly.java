@@ -5,12 +5,14 @@ public class Folly {
     private String name;
 
     private ResponseLogic rl;
+    private boolean introductionIsDone;
 
     public Folly() {
 
         this.name = "folly";
 
         this.rl = new ResponseLogic();
+        this.introductionIsDone = false;
     }
 
     public String getName() {
@@ -20,17 +22,12 @@ public class Folly {
 
     public void respond(String q) {
 
-        System.out.println("Folly: " + rl.respond(q));
-    }
-
-    public String respondToName(String name) {
-
-        if (rl.needsChanging(name)) {
-            String newName = rl.newName();
-            System.out.println("Folly: " + rl.respondToEqualName(newName));
-            return newName;
+        if (!introductionIsDone) {
+            System.out.println("Folly: " + rl.introduction(q));
+            introductionIsDone = true;
+            return;
         }
-        System.out.println("Folly: " + rl.respondToUniqueName(name));
-        return name;
+
+        System.out.println("Folly: " + rl.respond(q));
     }
 }

@@ -21,7 +21,18 @@ public class ResponseLogic {
 
     public boolean needsChanging(String name) {
 
-        return name.toLowerCase().equals("folly");
+        String ret = name.replaceAll("[^a-zA-Z]", "").toLowerCase();
+        return ret.equals("folly");
+    }
+
+    public String introduction(String name) {
+
+        if (needsChanging(name)) {
+            String newName = newName();
+            return respondToEqualName(newName);
+        } else {
+            return respondToUniqueName(name);
+        }
     }
 
     public String respondToEqualName(String name) {
