@@ -4,6 +4,8 @@
 
 **Kaikkien käyttäjien toiminnot:**
 
+* Syötä nimesi ja koe läheisyyden tunne kun botti puhuttelee sinua sillä, paitsi jos syötät botin nimen.
+  * Hyvin älykäs botti huomaa erikoismerkeilläkin naamioidun, mutta muuten samankaltaisen nimen.
 * Kysy kyllä tai ei-kysymys
 * Anna matemaattinen lauseke
   * Voi käyttää plus-, miinus-, kerto- ja jakomerkkejä sekä sulkuja [eli +, -, *, /, (, )]. Desimaalilukujen merkitsemisessä voi käyttää joko pistettä tai pilkkua.
