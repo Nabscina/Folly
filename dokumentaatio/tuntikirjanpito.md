@@ -5,3 +5,5 @@ Päivä | Tunnit | Kuvaus
 19.01.2017 | 10min | Aloitettiin tuntikirjanpito ja hiottiin aihemäärittelyä
 20.01.2017 | 5min | Muokattiin kansiorakennetta
 22.01.2017 | 5min | Siirrettiin tiedostoja pois juurikansiosta, muokattiin aihemäärittelyä
+23.01.2017 | 1h | Toteutettiin keskustelupohja ja joitain luokkia
+24.01.2017 | 1h | Hiottiin eilisen toteutusta
