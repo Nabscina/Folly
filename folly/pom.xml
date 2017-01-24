@@ -37,9 +37,11 @@
                 <configuration>
                     <targetClasses>
                         <param>follybot.follybot.*</param>
+                        <param>follybot.response.*</param>
                     </targetClasses>
                     <targetTests>
                         <param>follybot.follybot.*</param>
+                        <param>follybot.response.*</param>
                     </targetTests>
                 </configuration>
             </plugin>
