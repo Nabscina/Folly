@@ -24,6 +24,7 @@ public class Conversation implements Runnable {
         folly.respond(human.getName());
 
         while (true) {
+            
             String question = reader.nextLine();
             folly.respond(question);
         }

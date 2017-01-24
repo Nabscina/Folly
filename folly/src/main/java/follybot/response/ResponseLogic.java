@@ -11,6 +11,7 @@ public class ResponseLogic {
 
     public String respond(String question) {
 
+        //alkeellinen
         return "Hi " + rb.getHumanName() + ".";
     }
 
