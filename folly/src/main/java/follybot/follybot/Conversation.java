@@ -7,10 +7,14 @@ public class Conversation implements Runnable {
     private Scanner reader;
     private Folly folly;
 
-    public Conversation() {
+    public Conversation(Scanner reader) {
 
-        this.reader = new Scanner(System.in);
+        this.reader = reader;
         this.folly = new Folly();
+    }
+    
+    public Conversation() {
+        
     }
 
     @Override
