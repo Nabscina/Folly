@@ -11,7 +11,6 @@ public class ResponseLogic {
 
     public String respond(String question) {
 
-        //alkeellinen
         if (simplified(question).equals("bye")) {
             return "Bye.";
         }
