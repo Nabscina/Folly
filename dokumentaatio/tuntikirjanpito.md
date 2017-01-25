@@ -7,3 +7,4 @@ Päivä | Tunnit | Kuvaus
 22.01.2017 | 5min | Siirrettiin tiedostoja pois juurikansiosta, muokattiin aihemäärittelyä
 23.01.2017 | 1h | Toteutettiin keskustelupohja ja joitain luokkia
 24.01.2017 | 1h | Hiottiin eilisen toteutusta
+25.01.2017 | 1h | Hiottiin aikaisempaa toteutusta lisää ja tehtiin testejä alkeelliselle keskusteluloopille
