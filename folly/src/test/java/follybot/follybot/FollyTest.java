@@ -35,6 +35,6 @@ public class FollyTest {
     @Test
     public void name() {
 
-        assertEquals("folly", folly.getName());
+        
     }
 }
