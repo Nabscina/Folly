@@ -12,6 +12,9 @@ public class ResponseLogic {
     public String respond(String question) {
 
         //alkeellinen
+        if (simplified(question).equals("bye")) {
+            return "Bye.";
+        }
         return "Hi " + rb.getHumanName() + ".";
     }
 
@@ -22,8 +25,7 @@ public class ResponseLogic {
 
     public boolean needsChanging(String name) {
 
-        String ret = name.replaceAll("[^a-zA-Z]", "").toLowerCase();
-        return ret.equals("folly");
+        return simplified(name).equals("folly");
     }
 
     public String introduction(String name) {
@@ -46,5 +48,10 @@ public class ResponseLogic {
 
         rb.setHumanName(name);
         return rb.uniqueNameResponse();
+    }
+
+    public String simplified(String question) {
+
+        return question.replaceAll("[^a-zA-Z]", "").toLowerCase();
     }
 }

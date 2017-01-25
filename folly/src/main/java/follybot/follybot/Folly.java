@@ -22,14 +22,13 @@ public class Folly {
         return this.name;
     }
 
-    public void respond(String q) {
+    public String respond(String q) {
 
         if (!introductionIsDone) {
-            System.out.println("Folly: " + rl.introduction(q));
             introductionIsDone = true;
-            return;
+            return "Folly: " + rl.introduction(q);
         }
 
-        System.out.println("Folly: " + rl.respond(q));
+        return "Folly: " + rl.respond(q);
     }
 }

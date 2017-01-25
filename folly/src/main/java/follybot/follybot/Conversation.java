@@ -6,7 +6,6 @@ public class Conversation implements Runnable {
 
     private Scanner reader;
     private Folly folly;
-    private Human human;
 
     public Conversation() {
 
@@ -18,15 +17,21 @@ public class Conversation implements Runnable {
     public void run() {
 
         System.out.println("What's your name?");
-        String name = reader.nextLine();
-        this.human = new Human(name);
-
-        folly.respond(human.getName());
 
         while (true) {
-            
+
             String question = reader.nextLine();
-            folly.respond(question);
+            String answer = folly.respond(question);
+            System.out.println(answer);
+
+            if (end(answer)) {
+                break;
+            }
         }
+    }
+
+    public boolean end(String answer) {
+
+        return answer.equals("Folly: Bye.");
     }
 }
