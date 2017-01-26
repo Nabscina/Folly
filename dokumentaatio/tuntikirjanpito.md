@@ -8,3 +8,4 @@ Päivä | Tunnit | Kuvaus
 23.01.2017 | 1h | Toteutettiin keskustelupohja ja joitain luokkia
 24.01.2017 | 1h | Hiottiin eilisen toteutusta
 25.01.2017 | 1,5h | Hiottiin aikaisempaa toteutusta lisää ja tehtiin testejä alkeelliselle keskusteluloopille
+26.01.2017 | 20min | Tehtiin checkstyle-konffi
