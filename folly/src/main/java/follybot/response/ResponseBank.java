@@ -5,6 +5,7 @@ import java.util.Collections;
 
 public class ResponseBank {
 
+    //tänne tulee varmaan aika paljon listoja
     private String humanName = "";
     private ArrayList<String> names;
     private ArrayList<String> equals;
