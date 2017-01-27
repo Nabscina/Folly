@@ -6,6 +6,9 @@ import java.util.Collections;
 public class ResponseBank {
 
     //tänne tulee varmaan aika paljon listoja
+    //ajattelin, että kunhan isoja listoja alkaa kertyä, sisältö
+    //kopioitaisiin kuhunkin erillisistä tiedostoista
+    //tai jotain muuta ns. parempaa
     private String humanName = "";
     private ArrayList<String> names;
     private ArrayList<String> equals;
