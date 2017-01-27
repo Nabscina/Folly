@@ -9,3 +9,5 @@
 * Kysy kyllä tai ei-kysymys
 * Anna matemaattinen lauseke
   * Voi käyttää plus-, miinus-, kerto- ja jakomerkkejä sekä sulkuja [eli +, -, *, /, (, )]. Desimaalilukujen merkitsemisessä voi käyttää joko pistettä tai pilkkua.
+* Sano jotain, oikeastaan ihan mitä vain
+  * Botista ei ole syvälliseen keskusteluun, mutta saatat saada vastaukseksi hyviä elämänohjeita.
