@@ -4,7 +4,7 @@
 
 **Kaikkien käyttäjien toiminnot:**
 
-* Syötä nimesi ja koe läheisyyden tunne kun botti puhuttelee sinua sillä, paitsi jos syötät botin nimen.
+* Syötä nimesi ja koe läheisyyden tunne kun botti puhuttelee sinua sillä, paitsi jos syötät botin nimen
   * Hyvin älykäs botti huomaa erikoismerkeilläkin naamioidun, mutta muuten samankaltaisen nimen.
 * Kysy kyllä tai ei-kysymys
   * Kysymysmerkki on olennainen. Kysymyslause loppuu kysymysmerkkiin. Jos et osaa näitä juttuja, botti suuttuu eikä silloin ehkä vastaa.
