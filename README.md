@@ -1,4 +1,4 @@
-Folly on botti, joka osaa monimutkaisia algoritmejä hyödyntämällä mm. vastata todenmukaisesti polaarisiin kysymyksiisi, kertoa viisauksia ja auttaa sinua kolmannen luokan matematiikan läksyissäsi.
+Folly on botti, joka osaa monimutkaisia algoritmejä hyödyntämällä mm. vastata todenmukaisesti polaarisiin kysymyksiisi, kertoa viisauksia ja auttaa sinua kolmannen luokan matematiikan läksyissäsi. gsdgsgdgsd
 
 **Dokumentaatio**
 
