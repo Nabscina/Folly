@@ -1,19 +1,26 @@
 package follybot.response;
 
+import follybot.response.math.BotMath;
+
 public class ResponseLogic {
 
     private ResponseBank rb;
+    private BotMath math;
 
     public ResponseLogic() {
 
         this.rb = new ResponseBank();
+        this.math = new BotMath();
     }
 
     public String respond(String question) {
 
         if (simplified(question).equals("bye")) {
             return "Bye.";
+        } else if (math.mathCheck(question)) {
+            return math.doMath(question).toString();
         }
+        
         return "Hi " + rb.getHumanName() + ".";
     }
 
