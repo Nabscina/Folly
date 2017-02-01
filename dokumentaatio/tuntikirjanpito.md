@@ -11,3 +11,4 @@ Päivä | Tunnit | Kuvaus
 26.01.2017 | 20min | Tehtiin checkstyle-konffi
 27.01.2017 | 20min | Tehtiin README.md ja lisättiin jo aikaisemmin generoitu checkstyle-raportti
 31.01.2017 | 1,5h | Toteutettiin jonkin sortin matikanlaskuominaisuus
+01.02.2017 | 2h | Lisättiin hyviä elämänohjeita ja tehtiin matikkaluokalle testejä
