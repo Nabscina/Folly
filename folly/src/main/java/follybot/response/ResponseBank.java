@@ -50,9 +50,9 @@ public class ResponseBank {
 
     public void addQuotes() {
 
-        Collections.addAll(quotes1, "If at first you don't succeed, ", "When life gets hard, ", "When life gives you lemons, ", "Don't give up, ", "Always do your best, and don't forget to ", "You may not be good at everything, but at least you can ", "If you treat others with respect, they will ", "Everything will be alright if you ",
+        Collections.addAll(quotes1, "If at first you don't succeed, ", "When life gets hard, ", "When life gives you lemons, ", "Don't give up, ", "Always do your best, and don't forget to ", "You may not be good at everything, but at least you can ", "Everything will be alright if you ",
                 "Smile, and ", "The best way to relieve stress is to ", "To stay optimistic during tough times, ", "You'll never succeed if you don't ", "Work hard, dream big, and ", "Life is short, so ", "You know they love you when they tell you to ", "The most important thing in life is to ",
-                "To become immortal, ", "Whatever happens, at least you know how to ", "Quit wasting your time and ", "Don't be stupid, ", "Life becomes easier when you learn to ", "You will never be cool unless you ", "You'll never become anything if you don't ", "Don't worry about it, and ",
+                "To become immortal, ", "Quit wasting your time and ", "Don't be stupid, ", "You will never be cool unless you ", "You'll never become anything if you don't ", "Don't worry about it, and ",
                 "Life isn't worth it unless you ");
 
         Collections.addAll(quotes2, "buy a horse", "shut up", "play video games", "talk to stupid bots all day", "cease to exist", "program in C", "never do anything, ever", "speak French",
