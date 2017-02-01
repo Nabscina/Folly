@@ -38,10 +38,12 @@
                     <targetClasses>
                         <param>follybot.follybot.*</param>
                         <param>follybot.response.*</param>
+                        <param>follybot.response.math.*</param>
                     </targetClasses>
                     <targetTests>
                         <param>follybot.follybot.*</param>
                         <param>follybot.response.*</param>
+                        <param>follybot.response.math.*</param>
                     </targetTests>
                 </configuration>
             </plugin>

@@ -159,6 +159,42 @@ public class ConversationTest {
     }
 
     @Test
+    public void follyDetectsMath() {
+
+        String input = form("x", "What's 4 - 5 + 6?", "bye");
+
+        Conversation c = new Conversation(new Scanner(input));
+        c.run();
+        String output = stream.toString();
+
+        assertTrue(output.contains("Folly: 5."));
+    }
+
+    @Test
+    public void follyDetectsMath2() {
+
+        String input = form("x", "Tell me what (2,5 + 4)*(-33.3 + 900) is.", "bye");
+
+        Conversation c = new Conversation(new Scanner(input));
+        c.run();
+        String output = stream.toString();
+
+        assertTrue(output.contains("Folly: 5633.55."));
+    }
+
+    @Test
+    public void follyDetectsMath3() {
+
+        String input = form("x", "255.0/0", "bye");
+
+        Conversation c = new Conversation(new Scanner(input));
+        c.run();
+        String output = stream.toString();
+
+        assertTrue(output.contains("Folly: DO NOT DIVIDE BY ZERO! EVER!"));
+    }
+
+    @Test
     public void methodEndWorks() {
 
         assertTrue(new Conversation().end("Folly: Bye."));

@@ -21,7 +21,7 @@ public class BotMath {
         String newLine = line.replaceAll("[^0-9-+*/(),.]", "");
         newLine = newLine.replaceAll(",", ".");
 
-        while (newLine.endsWith(".") || newLine.endsWith(".")) {
+        while (newLine.startsWith(".") || newLine.endsWith(".")) {
             if (newLine.endsWith(".")) {
                 newLine = newLine.substring(0, newLine.length() - 1);
             }
