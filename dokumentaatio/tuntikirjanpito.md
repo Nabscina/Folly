@@ -10,3 +10,4 @@ Päivä | Tunnit | Kuvaus
 25.01.2017 | 1,5h | Hiottiin aikaisempaa toteutusta lisää ja tehtiin testejä alkeelliselle keskusteluloopille
 26.01.2017 | 20min | Tehtiin checkstyle-konffi
 27.01.2017 | 20min | Tehtiin README.md ja lisättiin jo aikaisemmin generoitu checkstyle-raportti
+31.01.2017 | 1,5h | Toteutettiin jonkin sortin matikanlaskuominaisuus
