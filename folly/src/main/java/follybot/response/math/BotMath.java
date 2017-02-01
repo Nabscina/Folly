@@ -41,6 +41,8 @@ public class BotMath {
             Object ret = this.engine.eval(expression);
             if (ret.toString().equals("Infinity") || ret.toString().equals("-Infinity") || ret.toString().equals("NaN")) {
                 return "DO NOT DIVIDE BY ZERO! EVER!";
+            } else if (ret.toString().equals("-0.0")) {
+                return "0.";
             }
             return ret + ".";
         } catch (Exception e) {
