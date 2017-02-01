@@ -1,16 +1,19 @@
 package follybot.response;
 
 import follybot.response.math.BotMath;
+import java.util.Random;
 
 public class ResponseLogic {
 
     private ResponseBank rb;
     private BotMath math;
+    private Random random;
 
     public ResponseLogic() {
 
         this.rb = new ResponseBank();
         this.math = new BotMath();
+        this.random = new Random();
     }
 
     public String respond(String question) {
@@ -20,8 +23,8 @@ public class ResponseLogic {
         } else if (math.mathCheck(question)) {
             return math.doMath(question).toString();
         }
-        
-        return "Hi " + rb.getHumanName() + ".";
+
+        return rb.quote() + endQuote();
     }
 
     public String newName() {
@@ -59,5 +62,16 @@ public class ResponseLogic {
     public String simplified(String question) {
 
         return question.replaceAll("[^a-zA-Z]", "").toLowerCase();
+    }
+
+    public String endQuote() {
+
+        int zerotoseven = random.nextInt(8);
+
+        if (zerotoseven == 7) {
+            return ", " + rb.getHumanName() + ".";
+        } else {
+            return ".";
+        }
     }
 }

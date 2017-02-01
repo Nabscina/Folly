@@ -14,11 +14,17 @@ public class ResponseBank {
     private ArrayList<String> equals;
     private ArrayList<String> uniques;
 
+    private ArrayList<String> quotes1;
+    private ArrayList<String> quotes2;
+
     public ResponseBank() {
 
         names = new ArrayList<>();
         equals = new ArrayList<>();
         uniques = new ArrayList<>();
+
+        quotes1 = new ArrayList<>();
+        quotes2 = new ArrayList<>();
     }
 
     public void addNames() {
@@ -40,6 +46,31 @@ public class ResponseBank {
         uniques.add(humanName + ". That's a strange name.");
         uniques.add(humanName + ". I like that.");
         uniques.add("Glad to see you, " + humanName + ".");
+    }
+
+    public void addQuotes() {
+
+        Collections.addAll(quotes1, "If at first you don't succeed, ", "When life gets hard, ", "When life gives you lemons, ", "Don't give up, ", "Always do your best, and don't forget to ", "You may not be good at everything, but at least you can ", "If you treat others with respect, they will ", "Everything will be alright if you ",
+                "Smile, and ", "The best way to relieve stress is to ", "To stay optimistic during tough times, ", "You'll never succeed if you don't ", "Work hard, dream big, and ", "Life is short, so ", "You know they love you when they tell you to ", "The most important thing in life is to ",
+                "To become immortal, ", "Whatever happens, at least you know how to ", "Quit wasting your time and ", "Don't be stupid, ", "Life becomes easier when you learn to ", "You will never be cool unless you ", "You'll never become anything if you don't ", "Don't worry about it, and ",
+                "Life isn't worth it unless you ");
+
+        Collections.addAll(quotes2, "buy a horse", "shut up", "play video games", "talk to stupid bots all day", "cease to exist", "program in C", "never do anything, ever", "speak French",
+                "jump repeatedly and scream", "stop breathing", "trust me when I say the cake is not a lie", "eat your vegetables", "kill somebody with a pizza cutter", "ERROR: FAILED TO FINISH QUOTE. Sorry", "enjoy high-quality memes", "pursue a career in web development",
+                "disregard every piece of advice your parents ever gave you", "do a barrel roll", "go get a shower. Even I can smell you, and I don't even have a sense of smell", "give your life to me", "pick mushrooms all day, every day, for the rest of your life", "accept the fact I'll always be more intelligent than you", "smoke weed every day", "take your own life",
+                "eat cheesecake");
+    }
+
+    public String quote() {
+
+        if (quotes1.isEmpty() || quotes2.isEmpty()) {
+            addQuotes();
+        }
+
+        Collections.shuffle(quotes1);
+        Collections.shuffle(quotes2);
+
+        return quotes1.get(0) + quotes2.get(0);
     }
 
     public String returnAName() {
