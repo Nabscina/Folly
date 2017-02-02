@@ -2,8 +2,6 @@ Folly on botti, joka osaa monimutkaisia algoritmejä hyödyntämällä mm. vasta
 
 **Dokumentaatio**
 
-[aihemäärittely](dokumentaatio/aihemäärittely.md)
+[aiheen kuvaus](dokumentaatio/aiheenKuvausJaRakenne.md)
 
 [tuntikirjanpito](dokumentaatio/tuntikirjanpito.md)
-
-[luokkakaavio](dokumentaatio/aiheenKuvausJaRakenne.md)
