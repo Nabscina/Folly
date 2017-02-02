@@ -11,7 +11,7 @@
 * Anna matemaattinen lauseke
   * Voi käyttää plus-, miinus-, kerto- ja jakomerkkejä sekä sulkuja [eli +, -, *, /, (, )]. Desimaalilukujen merkitsemisessä voi käyttää joko pistettä tai pilkkua. Älä jaa nollalla. Tai jaa. Ihan sama.
 * Sano jotain, oikeastaan ihan mitä vain
-  * Botista ei ole syvälliseen keskusteluun, mutta saatat saada vastaukseksi hyviä elämänohjeita.
+  * Botista ei ole syvälliseen keskusteluun, mutta saatat saada vastaukseksi hyviä elämänohjeita. Älä kuitenkaan noudata niitä kaikkia.
 
 
 ![class diagram](luokkakaavio.png)
