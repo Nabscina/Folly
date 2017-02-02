@@ -53,12 +53,13 @@ public class ResponseBank {
         Collections.addAll(quotes1, "If at first you don't succeed, ", "When life gets hard, ", "When life gives you lemons, ", "Don't give up, ", "Always do your best, and don't forget to ", "You may not be good at everything, but at least you can ", "Everything will be alright if you ",
                 "Smile, and ", "The best way to relieve stress is to ", "To stay optimistic during tough times, ", "You'll never succeed if you don't ", "Work hard, dream big, and ", "Life is short, so ", "You know they love you when they tell you to ", "The most important thing in life is to ",
                 "To become immortal, ", "Quit wasting your time and ", "Don't be stupid, ", "You will never be cool unless you ", "You'll never become anything if you don't ", "Don't worry about it, and ",
-                "Life isn't worth it unless you ");
+                "Life isn't worth living unless you ", "You can be anything if you ", "When in doubt, ", "Low self-esteem is a sign you need to ", "To make friends, ");
 
-        Collections.addAll(quotes2, "buy a horse", "shut up", "play video games", "talk to stupid bots all day", "cease to exist", "program in C", "never do anything, ever", "speak French",
+        Collections.addAll(quotes2, "buy a horse", "shut up", "play video games", "talk to stupid bots all day", "cease to exist", "program in C", "dance", "speak French",
                 "jump repeatedly and scream", "stop breathing", "trust me when I say the cake is not a lie", "eat your vegetables", "kill somebody with a pizza cutter", "ERROR: FAILED TO FINISH QUOTE. Sorry", "enjoy high-quality memes", "pursue a career in web development",
-                "disregard every piece of advice your parents ever gave you", "do a barrel roll", "go get a shower. Even I can smell you, and I don't even have a sense of smell", "give your life to me", "pick mushrooms all day, every day, for the rest of your life", "accept the fact I'll always be more intelligent than you", "smoke weed every day", "take your own life",
-                "eat cheesecake");
+                "disregard every piece of advice your parents ever gave you", "do a barrel roll", "take a shower. Even I can smell you, and I don't even have a sense of smell", "give your life to me", "pick mushrooms all day, every day, for the rest of your life", "accept the fact I'll always be more intelligent than you", "smoke weed every day", "take your own life",
+                "eat cheesecake", "burn your house down", "climb a tree", "eat three spiders", "make apple juice", "quit programming in Java and learn C#", "get rid of your friends and family", "embrace the thought of dying one day", "get a hamster and name it " + humanName, "eat two oranges in under one minute",
+                "eat raw chicken", "giggle", "stop dividing by zero", "ignore everyone and everything", "pee", "lie down and count to ten", "pick your nose", "subscribe to me on YouTube", "follow me on Twitter", "refactor your code");
     }
 
     public String quote() {
