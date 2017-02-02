@@ -61,58 +61,59 @@
 <a class="jxr_linenumber" name="L53" href="#L53">53</a>          Collections.addAll(quotes1, <span class="jxr_string">"If at first you don't succeed, "</span>, <span class="jxr_string">"When life gets hard, "</span>, <span class="jxr_string">"When life gives you lemons, "</span>, <span class="jxr_string">"Don't give up, "</span>, <span class="jxr_string">"Always do your best, and don't forget to "</span>, <span class="jxr_string">"You may not be good at everything, but at least you can "</span>, <span class="jxr_string">"Everything will be alright if you "</span>,
 <a class="jxr_linenumber" name="L54" href="#L54">54</a>                  <span class="jxr_string">"Smile, and "</span>, <span class="jxr_string">"The best way to relieve stress is to "</span>, <span class="jxr_string">"To stay optimistic during tough times, "</span>, <span class="jxr_string">"You'll never succeed if you don't "</span>, <span class="jxr_string">"Work hard, dream big, and "</span>, <span class="jxr_string">"Life is short, so "</span>, <span class="jxr_string">"You know they love you when they tell you to "</span>, <span class="jxr_string">"The most important thing in life is to "</span>,
 <a class="jxr_linenumber" name="L55" href="#L55">55</a>                  <span class="jxr_string">"To become immortal, "</span>, <span class="jxr_string">"Quit wasting your time and "</span>, <span class="jxr_string">"Don't be stupid, "</span>, <span class="jxr_string">"You will never be cool unless you "</span>, <span class="jxr_string">"You'll never become anything if you don't "</span>, <span class="jxr_string">"Don't worry about it, and "</span>,
-<a class="jxr_linenumber" name="L56" href="#L56">56</a>                  <span class="jxr_string">"Life isn't worth it unless you "</span>);
+<a class="jxr_linenumber" name="L56" href="#L56">56</a>                  <span class="jxr_string">"Life isn't worth living unless you "</span>, <span class="jxr_string">"You can be anything if you "</span>, <span class="jxr_string">"When in doubt, "</span>, <span class="jxr_string">"Low self-esteem is a sign you need to "</span>, <span class="jxr_string">"To make friends, "</span>);
 <a class="jxr_linenumber" name="L57" href="#L57">57</a>  
-<a class="jxr_linenumber" name="L58" href="#L58">58</a>          Collections.addAll(quotes2, <span class="jxr_string">"buy a horse"</span>, <span class="jxr_string">"shut up"</span>, <span class="jxr_string">"play video games"</span>, <span class="jxr_string">"talk to stupid bots all day"</span>, <span class="jxr_string">"cease to exist"</span>, <span class="jxr_string">"program in C"</span>, <span class="jxr_string">"never do anything, ever"</span>, <span class="jxr_string">"speak French"</span>,
+<a class="jxr_linenumber" name="L58" href="#L58">58</a>          Collections.addAll(quotes2, <span class="jxr_string">"buy a horse"</span>, <span class="jxr_string">"shut up"</span>, <span class="jxr_string">"play video games"</span>, <span class="jxr_string">"talk to stupid bots all day"</span>, <span class="jxr_string">"cease to exist"</span>, <span class="jxr_string">"program in C"</span>, <span class="jxr_string">"dance"</span>, <span class="jxr_string">"speak French"</span>,
 <a class="jxr_linenumber" name="L59" href="#L59">59</a>                  <span class="jxr_string">"jump repeatedly and scream"</span>, <span class="jxr_string">"stop breathing"</span>, <span class="jxr_string">"trust me when I say the cake is not a lie"</span>, <span class="jxr_string">"eat your vegetables"</span>, <span class="jxr_string">"kill somebody with a pizza cutter"</span>, <span class="jxr_string">"ERROR: FAILED TO FINISH QUOTE. Sorry"</span>, <span class="jxr_string">"enjoy high-quality memes"</span>, <span class="jxr_string">"pursue a career in web development"</span>,
-<a class="jxr_linenumber" name="L60" href="#L60">60</a>                  <span class="jxr_string">"disregard every piece of advice your parents ever gave you"</span>, <span class="jxr_string">"do a barrel roll"</span>, <span class="jxr_string">"go get a shower. Even I can smell you, and I don't even have a sense of smell"</span>, <span class="jxr_string">"give your life to me"</span>, <span class="jxr_string">"pick mushrooms all day, every day, for the rest of your life"</span>, <span class="jxr_string">"accept the fact I'll always be more intelligent than you"</span>, <span class="jxr_string">"smoke weed every day"</span>, <span class="jxr_string">"take your own life"</span>,
-<a class="jxr_linenumber" name="L61" href="#L61">61</a>                  <span class="jxr_string">"eat cheesecake"</span>);
-<a class="jxr_linenumber" name="L62" href="#L62">62</a>      }
-<a class="jxr_linenumber" name="L63" href="#L63">63</a>  
-<a class="jxr_linenumber" name="L64" href="#L64">64</a>      <strong class="jxr_keyword">public</strong> String quote() {
-<a class="jxr_linenumber" name="L65" href="#L65">65</a>  
-<a class="jxr_linenumber" name="L66" href="#L66">66</a>          <strong class="jxr_keyword">if</strong> (quotes1.isEmpty() || quotes2.isEmpty()) {
-<a class="jxr_linenumber" name="L67" href="#L67">67</a>              addQuotes();
-<a class="jxr_linenumber" name="L68" href="#L68">68</a>          }
-<a class="jxr_linenumber" name="L69" href="#L69">69</a>  
-<a class="jxr_linenumber" name="L70" href="#L70">70</a>          Collections.shuffle(quotes1);
-<a class="jxr_linenumber" name="L71" href="#L71">71</a>          Collections.shuffle(quotes2);
-<a class="jxr_linenumber" name="L72" href="#L72">72</a>  
-<a class="jxr_linenumber" name="L73" href="#L73">73</a>          <strong class="jxr_keyword">return</strong> quotes1.get(0) + quotes2.get(0);
-<a class="jxr_linenumber" name="L74" href="#L74">74</a>      }
-<a class="jxr_linenumber" name="L75" href="#L75">75</a>  
-<a class="jxr_linenumber" name="L76" href="#L76">76</a>      <strong class="jxr_keyword">public</strong> String returnAName() {
-<a class="jxr_linenumber" name="L77" href="#L77">77</a>  
-<a class="jxr_linenumber" name="L78" href="#L78">78</a>          addNames();
-<a class="jxr_linenumber" name="L79" href="#L79">79</a>          Collections.shuffle(names);
-<a class="jxr_linenumber" name="L80" href="#L80">80</a>  
-<a class="jxr_linenumber" name="L81" href="#L81">81</a>          <strong class="jxr_keyword">return</strong> names.get(0);
-<a class="jxr_linenumber" name="L82" href="#L82">82</a>      }
-<a class="jxr_linenumber" name="L83" href="#L83">83</a>  
-<a class="jxr_linenumber" name="L84" href="#L84">84</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> setHumanName(String name) {
-<a class="jxr_linenumber" name="L85" href="#L85">85</a>  
-<a class="jxr_linenumber" name="L86" href="#L86">86</a>          humanName = name;
-<a class="jxr_linenumber" name="L87" href="#L87">87</a>      }
-<a class="jxr_linenumber" name="L88" href="#L88">88</a>  
-<a class="jxr_linenumber" name="L89" href="#L89">89</a>      <strong class="jxr_keyword">public</strong> String getHumanName() {
-<a class="jxr_linenumber" name="L90" href="#L90">90</a>  
-<a class="jxr_linenumber" name="L91" href="#L91">91</a>          <strong class="jxr_keyword">return</strong> humanName;
-<a class="jxr_linenumber" name="L92" href="#L92">92</a>      }
-<a class="jxr_linenumber" name="L93" href="#L93">93</a>  
-<a class="jxr_linenumber" name="L94" href="#L94">94</a>      <strong class="jxr_keyword">public</strong> String uniqueNameResponse() {
-<a class="jxr_linenumber" name="L95" href="#L95">95</a>  
-<a class="jxr_linenumber" name="L96" href="#L96">96</a>          addUniques();
-<a class="jxr_linenumber" name="L97" href="#L97">97</a>          Collections.shuffle(uniques);
-<a class="jxr_linenumber" name="L98" href="#L98">98</a>          <strong class="jxr_keyword">return</strong> uniques.get(0);
-<a class="jxr_linenumber" name="L99" href="#L99">99</a>      }
-<a class="jxr_linenumber" name="L100" href="#L100">100</a> 
-<a class="jxr_linenumber" name="L101" href="#L101">101</a>     <strong class="jxr_keyword">public</strong> String equalNameResponse() {
-<a class="jxr_linenumber" name="L102" href="#L102">102</a> 
-<a class="jxr_linenumber" name="L103" href="#L103">103</a>         addEquals();
-<a class="jxr_linenumber" name="L104" href="#L104">104</a>         Collections.shuffle(equals);
-<a class="jxr_linenumber" name="L105" href="#L105">105</a>         <strong class="jxr_keyword">return</strong> equals.get(0);
-<a class="jxr_linenumber" name="L106" href="#L106">106</a>     }
-<a class="jxr_linenumber" name="L107" href="#L107">107</a> }
+<a class="jxr_linenumber" name="L60" href="#L60">60</a>                  <span class="jxr_string">"disregard every piece of advice your parents ever gave you"</span>, <span class="jxr_string">"do a barrel roll"</span>, <span class="jxr_string">"take a shower. Even I can smell you, and I don't even have a sense of smell"</span>, <span class="jxr_string">"give your life to me"</span>, <span class="jxr_string">"pick mushrooms all day, every day, for the rest of your life"</span>, <span class="jxr_string">"accept the fact I'll always be more intelligent than you"</span>, <span class="jxr_string">"smoke weed every day"</span>, <span class="jxr_string">"take your own life"</span>,
+<a class="jxr_linenumber" name="L61" href="#L61">61</a>                  <span class="jxr_string">"eat cheesecake"</span>, <span class="jxr_string">"burn your house down"</span>, <span class="jxr_string">"climb a tree"</span>, <span class="jxr_string">"eat three spiders"</span>, <span class="jxr_string">"make apple juice"</span>, <span class="jxr_string">"quit programming in Java and learn C#"</span>, <span class="jxr_string">"get rid of your friends and family"</span>, <span class="jxr_string">"embrace the thought of dying one day"</span>, <span class="jxr_string">"get a hamster and name it "</span> + humanName, <span class="jxr_string">"eat two oranges in under one minute"</span>,
+<a class="jxr_linenumber" name="L62" href="#L62">62</a>                  <span class="jxr_string">"eat raw chicken"</span>, <span class="jxr_string">"giggle"</span>, <span class="jxr_string">"stop dividing by zero"</span>, <span class="jxr_string">"ignore everyone and everything"</span>, <span class="jxr_string">"pee"</span>, <span class="jxr_string">"lie down and count to ten"</span>, <span class="jxr_string">"pick your nose"</span>, <span class="jxr_string">"subscribe to me on YouTube"</span>, <span class="jxr_string">"follow me on Twitter"</span>, <span class="jxr_string">"refactor your code"</span>);
+<a class="jxr_linenumber" name="L63" href="#L63">63</a>      }
+<a class="jxr_linenumber" name="L64" href="#L64">64</a>  
+<a class="jxr_linenumber" name="L65" href="#L65">65</a>      <strong class="jxr_keyword">public</strong> String quote() {
+<a class="jxr_linenumber" name="L66" href="#L66">66</a>  
+<a class="jxr_linenumber" name="L67" href="#L67">67</a>          <strong class="jxr_keyword">if</strong> (quotes1.isEmpty() || quotes2.isEmpty()) {
+<a class="jxr_linenumber" name="L68" href="#L68">68</a>              addQuotes();
+<a class="jxr_linenumber" name="L69" href="#L69">69</a>          }
+<a class="jxr_linenumber" name="L70" href="#L70">70</a>  
+<a class="jxr_linenumber" name="L71" href="#L71">71</a>          Collections.shuffle(quotes1);
+<a class="jxr_linenumber" name="L72" href="#L72">72</a>          Collections.shuffle(quotes2);
+<a class="jxr_linenumber" name="L73" href="#L73">73</a>  
+<a class="jxr_linenumber" name="L74" href="#L74">74</a>          <strong class="jxr_keyword">return</strong> quotes1.get(0) + quotes2.get(0);
+<a class="jxr_linenumber" name="L75" href="#L75">75</a>      }
+<a class="jxr_linenumber" name="L76" href="#L76">76</a>  
+<a class="jxr_linenumber" name="L77" href="#L77">77</a>      <strong class="jxr_keyword">public</strong> String returnAName() {
+<a class="jxr_linenumber" name="L78" href="#L78">78</a>  
+<a class="jxr_linenumber" name="L79" href="#L79">79</a>          addNames();
+<a class="jxr_linenumber" name="L80" href="#L80">80</a>          Collections.shuffle(names);
+<a class="jxr_linenumber" name="L81" href="#L81">81</a>  
+<a class="jxr_linenumber" name="L82" href="#L82">82</a>          <strong class="jxr_keyword">return</strong> names.get(0);
+<a class="jxr_linenumber" name="L83" href="#L83">83</a>      }
+<a class="jxr_linenumber" name="L84" href="#L84">84</a>  
+<a class="jxr_linenumber" name="L85" href="#L85">85</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> setHumanName(String name) {
+<a class="jxr_linenumber" name="L86" href="#L86">86</a>  
+<a class="jxr_linenumber" name="L87" href="#L87">87</a>          humanName = name;
+<a class="jxr_linenumber" name="L88" href="#L88">88</a>      }
+<a class="jxr_linenumber" name="L89" href="#L89">89</a>  
+<a class="jxr_linenumber" name="L90" href="#L90">90</a>      <strong class="jxr_keyword">public</strong> String getHumanName() {
+<a class="jxr_linenumber" name="L91" href="#L91">91</a>  
+<a class="jxr_linenumber" name="L92" href="#L92">92</a>          <strong class="jxr_keyword">return</strong> humanName;
+<a class="jxr_linenumber" name="L93" href="#L93">93</a>      }
+<a class="jxr_linenumber" name="L94" href="#L94">94</a>  
+<a class="jxr_linenumber" name="L95" href="#L95">95</a>      <strong class="jxr_keyword">public</strong> String uniqueNameResponse() {
+<a class="jxr_linenumber" name="L96" href="#L96">96</a>  
+<a class="jxr_linenumber" name="L97" href="#L97">97</a>          addUniques();
+<a class="jxr_linenumber" name="L98" href="#L98">98</a>          Collections.shuffle(uniques);
+<a class="jxr_linenumber" name="L99" href="#L99">99</a>          <strong class="jxr_keyword">return</strong> uniques.get(0);
+<a class="jxr_linenumber" name="L100" href="#L100">100</a>     }
+<a class="jxr_linenumber" name="L101" href="#L101">101</a> 
+<a class="jxr_linenumber" name="L102" href="#L102">102</a>     <strong class="jxr_keyword">public</strong> String equalNameResponse() {
+<a class="jxr_linenumber" name="L103" href="#L103">103</a> 
+<a class="jxr_linenumber" name="L104" href="#L104">104</a>         addEquals();
+<a class="jxr_linenumber" name="L105" href="#L105">105</a>         Collections.shuffle(equals);
+<a class="jxr_linenumber" name="L106" href="#L106">106</a>         <strong class="jxr_keyword">return</strong> equals.get(0);
+<a class="jxr_linenumber" name="L107" href="#L107">107</a>     }
+<a class="jxr_linenumber" name="L108" href="#L108">108</a> }
 </pre>
 <hr/>
 <div id="footer">Copyright &#169; 2017. All rights reserved.</div>
