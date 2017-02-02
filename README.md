@@ -8,4 +8,4 @@ Folly on botti, joka osaa monimutkaisia algoritmejä hyödyntämällä mm. vasta
 
 [pit-raportti](https://htmlpreview.github.io/?https://github.com/Nabscina/FollyBot/blob/master/dokumentaatio/pit-raportti/201702022209/index.html)
 
-[checkstyle-raportti](https://htmlpreview.github.io/?https://github.com/Nabscina/FollyBot/tree/master/dokumentaatio/checkstyle-raportti/checkstyle.html)
+[checkstyle-raportti](https://htmlpreview.github.io/?https://github.com/Nabscina/FollyBot/blob/master/dokumentaatio/checkstyle-raportti/checkstyle.html)
