@@ -56,17 +56,20 @@ public class CodeLanguage {
 
         try {
             Scanner reader = new Scanner(new File(filename), "UTF-8");
-            ArrayList<String> ret = new ArrayList<>();
-
-            while (reader.hasNextLine()) {
-                String line = reader.nextLine();
-                ret.add(codeToNormal(line));
-            }
-            return ret;
+            return addToList(reader, new ArrayList<>());
         } catch (Exception e) {
             System.out.print("");
         }
 
         return new ArrayList<>();
+    }
+
+    public ArrayList<String> addToList(Scanner reader, ArrayList<String> list) {
+
+        while (reader.hasNextLine()) {
+            list.add(codeToNormal(reader.nextLine()));
+        }
+
+        return list;
     }
 }
