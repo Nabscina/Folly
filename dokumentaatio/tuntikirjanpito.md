@@ -14,3 +14,4 @@ Päivä | Tunnit | Kuvaus
 01.02.2017 | 2h | Lisättiin hyviä elämänohjeita ja tehtiin matikkaluokalle testejä
 02.02.2017 | 2h | Lisää elämänohjeita, testejä response-luokille, uudet pit ja checkstyle
 03.02.2017 | 1h | CodeLanguage-luokka, testejä sille, jälleen uudet pit ja checkstyle, luokkakaaviotäydennys
+07.02.2017 | 1,5h | files-pakkaus; CodeLanguage lukee nyt tiedostoja, decryptaa ja palauttaa sisällöt ResponseBankille, pari testiä
