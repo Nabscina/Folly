@@ -7,11 +7,10 @@ import follybot.response.codelanguage.CodeLanguage;
 public class ResponseBank {
 
     private String humanName = "";
-    
+
     private ArrayList<String> names;
     private ArrayList<String> equals;
     private ArrayList<String> uniques;
-
     private ArrayList<String> quotes1;
     private ArrayList<String> quotes2;
 
@@ -32,25 +31,13 @@ public class ResponseBank {
 
         Collections.shuffle(quotes1);
         Collections.shuffle(quotes2);
-
         return quotes1.get(0) + quotes2.get(0);
     }
 
     public String getAName() {
 
         Collections.shuffle(names);
-
         return names.get(0);
-    }
-
-    public void setHumanName(String name) {
-
-        humanName = name;
-    }
-
-    public String getHumanName() {
-
-        return humanName;
     }
 
     public String uniqueNameResponse() {
@@ -63,5 +50,15 @@ public class ResponseBank {
 
         Collections.shuffle(equals);
         return equals.get(0) + humanName + ".";
+    }
+
+    public void setHumanName(String name) {
+
+        humanName = name;
+    }
+
+    public String getHumanName() {
+
+        return humanName;
     }
 }
