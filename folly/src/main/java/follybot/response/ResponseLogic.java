@@ -29,7 +29,7 @@ public class ResponseLogic {
 
     public String newName() {
 
-        return rb.returnAName();
+        return rb.getAName();
     }
 
     public boolean needsChanging(String name) {

@@ -1,6 +1,9 @@
 package follybot.response.codelanguage;
 
+import java.io.File;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Scanner;
 
 public class CodeLanguage {
 
@@ -47,5 +50,23 @@ public class CodeLanguage {
         }
 
         return ret;
+    }
+
+    public ArrayList<String> codeToNormalList(String filename) {
+
+        try {
+            Scanner reader = new Scanner(new File(filename), "UTF-8");
+            ArrayList<String> ret = new ArrayList<>();
+
+            while (reader.hasNextLine()) {
+                String line = reader.nextLine();
+                ret.add(codeToNormal(line));
+            }
+            return ret;
+        } catch (Exception e) {
+            System.out.print("");
+        }
+
+        return new ArrayList<>();
     }
 }
