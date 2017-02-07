@@ -3,6 +3,7 @@ package follybot.response;
 import java.util.ArrayList;
 import java.util.Collections;
 import follybot.response.codelanguage.CodeLanguage;
+import follybot.response.quotemaker.QuoteMaker;
 
 public class ResponseBank {
 
@@ -13,25 +14,30 @@ public class ResponseBank {
     private ArrayList<String> uniques;
     private ArrayList<String> quotes1;
     private ArrayList<String> quotes2;
+    private ArrayList<String> words;
 
     private CodeLanguage cl;
+    private QuoteMaker qm;
 
     public ResponseBank() {
 
         cl = new CodeLanguage();
+        qm = new QuoteMaker();
 
         equals = cl.codeToNormalList("src/main/java/follybot/response/files/equalnameresponse.txt");
         uniques = cl.codeToNormalList("src/main/java/follybot/response/files/uniquenameresponse.txt");
         names = cl.codeToNormalList("src/main/java/follybot/response/files/names.txt");
         quotes1 = cl.codeToNormalList("src/main/java/follybot/response/files/quotes1.txt");
         quotes2 = cl.codeToNormalList("src/main/java/follybot/response/files/quotes2.txt");
+        words = cl.codeToNormalList("src/main/java/follybot/response/files/words.txt");
     }
 
     public String quote() {
 
         Collections.shuffle(quotes1);
         Collections.shuffle(quotes2);
-        return quotes1.get(0) + quotes2.get(0);
+        Collections.shuffle(words);
+        return qm.makeAQuote(quotes1.get(0) + quotes2.get(0), words, humanName);
     }
 
     public String getAName() {

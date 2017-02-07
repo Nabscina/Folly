@@ -24,7 +24,7 @@ public class ResponseLogic {
             return math.doMath(question).toString();
         }
 
-        return rb.quote() + endQuote();
+        return rb.quote();
     }
 
     public String newName() {
@@ -62,16 +62,5 @@ public class ResponseLogic {
     public String simplified(String question) {
 
         return question.replaceAll("[^a-zA-Z]", "").toLowerCase();
-    }
-
-    public String endQuote() {
-
-        int zerotoseven = random.nextInt(8);
-
-        if (zerotoseven == 7) {
-            return ", " + rb.getHumanName() + ".";
-        } else {
-            return ".";
-        }
     }
 }

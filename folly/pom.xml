@@ -39,11 +39,15 @@
                         <param>follybot.follybot.*</param>
                         <param>follybot.response.*</param>
                         <param>follybot.response.math.*</param>
+                        <param>follybot.response.codelanguage.*</param>
+                        <param>follybot.response.quotemaker.*</param>
                     </targetClasses>
                     <targetTests>
                         <param>follybot.follybot.*</param>
                         <param>follybot.response.*</param>
                         <param>follybot.response.math.*</param>
+                        <param>follybot.response.codelanguage.*</param>
+                        <param>follybot.response.quotemaker.*</param>
                     </targetTests>
                 </configuration>
             </plugin>
