@@ -25,7 +25,7 @@ under the License.
     <language>en-us</language>
     <copyright>&#169;2017</copyright>
     <item>
-      <title>File: 7,
+      <title>File: 9,
              Errors: 0,
              Warnings: 0,
              Infos: 0
@@ -74,6 +74,20 @@ under the License.
               </tr>
                           <tr>
                 <td>
+                  <a href="${project.url}/checkstyle.html#follybot.response.quotemaker.QuoteMaker.java">follybot/response/quotemaker/QuoteMaker.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="${project.url}/checkstyle.html#follybot.response.codelanguage.CodeLanguage.java">follybot/response/codelanguage/CodeLanguage.java</a>
                 </td>
                 <td>
@@ -89,6 +103,20 @@ under the License.
                           <tr>
                 <td>
                   <a href="${project.url}/checkstyle.html#follybot.response.math.BotMath.java">follybot/response/math/BotMath.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#follybot.gui.GUI.java">follybot/gui/GUI.java</a>
                 </td>
                 <td>
                   0
