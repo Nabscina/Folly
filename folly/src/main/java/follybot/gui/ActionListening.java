@@ -6,6 +6,12 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JTextField;
 
+/**
+ * Tapahtumankuuntelija, eli kun tapahtuma tapahtuu (painetaan enteriä),
+ * actionPerformed päivittää tekstikentät. Myös Follyn fontin värin
+ * asetus käy kätevästi samalla kun se vaihtuu vasta kun käyttäjän nimi
+ * on tiedossa.
+ */
 public class ActionListening implements ActionListener {
 
     private JTextField follysfield;

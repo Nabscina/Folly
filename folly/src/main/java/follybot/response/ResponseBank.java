@@ -5,6 +5,14 @@ import java.util.Collections;
 import follybot.response.codelanguage.CodeLanguage;
 import follybot.response.quotemaker.QuoteMaker;
 
+/**
+ * Vastauspankki, eli (ehkä vähän nimensä vastaisesti?) palauttaa
+ * ResponseLogicin valitsemasta listasta jotain sanottavaa. Joka tapauksessa
+ * tallettaa listoihin sisällön files-pakkauksen tidostoista, mitä lähinnä
+ * tarkoitan vastauspankilla. Shufflaa myös listat ennen palautusta, niin
+ * saadaan satunnaisuutta. Tallettaa käyttäjän nimen, koska sitä tarvitsee joissain
+ * vastauksissa.
+ */
 public class ResponseBank {
 
     private String humanName = "";

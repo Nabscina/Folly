@@ -5,6 +5,12 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 
+/**
+ * Tämä luokka lukee files-tiedostoja ja decryptaa niiden koodikielen, minkä jälkeen tiedostojen sisältö
+ * palautetaan listana ResponseBankin käyttöön. Sisältää metodin myös encryptaamiselle,
+ * vaikka ohjelma ei sitä ominaisuutta käytäkään (minä käytän).
+ * Hyödyntää HashMappia, jossa jokaista merkkiä vastaa jokin eri merkki.
+ */
 public class CodeLanguage {
 
     private HashMap<Character, Character> map;

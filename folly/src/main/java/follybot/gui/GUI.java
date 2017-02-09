@@ -2,15 +2,16 @@ package follybot.gui;
 
 import follybot.follybot.Conversation;
 
-import java.awt.Color;
-import java.awt.Container;
-import java.awt.Dimension;
-import java.awt.Font;
-import java.awt.GridLayout;
+import java.awt.*;
 import javax.swing.JFrame;
 import javax.swing.JTextField;
 import javax.swing.WindowConstants;
 
+/**
+ * Täällä luodaan ikkuna, jossa keskustelu käydään ja liitetään ikkunan tekstikentät
+ * ActionListening-luokkaan, jotta uudet jutut päivittyvät ikkunaan. Luokalla on sen
+ * mahdollistamiseksi yhteys Conversation-luokkaan.
+ */
 public class GUI implements Runnable {
 
     private JFrame frame;
@@ -45,7 +46,7 @@ public class GUI implements Runnable {
 
         follysfield.setBackground(Color.decode("#DCDCDC"));
         follysfield.setFont(new Font("Helvetica", Font.BOLD, 15));
-        
+
         follysfield.setHorizontalAlignment(JTextField.CENTER);
         follysfield.setEditable(false);
 

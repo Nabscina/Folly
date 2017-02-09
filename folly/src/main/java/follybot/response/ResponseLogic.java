@@ -3,6 +3,12 @@ package follybot.response;
 import follybot.response.math.BotMath;
 import java.util.Random;
 
+/**
+ * Tämä luokka tarkastelee sitä, mitä käyttäjä sanoo, ja pyrkii palauttamaan
+ * siihen sopivan vastauksen, esimerkiksi jotain muuta loogista luokkaa hyödyntämällä
+ * (BotMath). Voidaan mm. siistiä käyttäjän syötettä tai etsiä kysymysmerkkiä.
+ * Hoitaa tarkastelun myös esittelyn osalta. Ehkä ei pitäisi.
+ */
 public class ResponseLogic {
 
     private ResponseBank rb;

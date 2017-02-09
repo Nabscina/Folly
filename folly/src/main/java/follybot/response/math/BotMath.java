@@ -5,6 +5,11 @@ import java.util.Collections;
 import javax.script.ScriptEngineManager;
 import javax.script.ScriptEngine;
 
+/**
+ * Matikkalogiikkaluokka, eli ResponseLogic voi tarkastella käyttäjän syötettä
+ * tämän luokan mathCheck-metodilla, joka modailee syötettä ja päättää, onko syöte matemaattinen lauseke.
+ * Jos on, etsitään ratkaisu hyödyntämällä ScriptEnginea ja palautetaan ratkaisu ResponseLogicille. 
+ */
 public class BotMath {
 
     private ScriptEngineManager manager;
