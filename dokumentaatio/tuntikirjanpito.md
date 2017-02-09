@@ -17,3 +17,4 @@ Päivä | Tunnit | Kuvaus
 07.02.2017 | 1,5h | files-pakkaus; CodeLanguage lukee nyt tiedostoja, decryptaa ja palauttaa sisällöt ResponseBankille, pari testiä
 07.02.2017 | 1h | ResponseBankille käyttöön luokka QuoteMaker, pari testiä
 09.02.2017 | 2h | Muutettiin graafiselle alustalle (+GUI ja ActionListening), eli mm. heivattiin Scanner
+09.02.2017 | 1h | Jokaiselle luokalle JavaDoc
