@@ -1,11 +1,11 @@
 package follybot.follybot;
 
-import java.util.Scanner;
+import follybot.gui.GUI;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        new Conversation(new Scanner(System.in)).run();
+        new GUI().run();
     }
 }

@@ -17,9 +17,14 @@ public class Folly {
 
         if (!introductionIsDone) {
             introductionIsDone = true;
-            return "Folly: " + rl.introduction(q);
+            return rl.introduction(q);
         }
 
-        return "Folly: " + rl.respond(q);
+        return rl.respond(q);
+    }
+
+    public boolean introductionIsDone() {
+
+        return introductionIsDone;
     }
 }

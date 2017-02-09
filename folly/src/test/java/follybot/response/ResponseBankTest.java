@@ -40,6 +40,9 @@ public class ResponseBankTest {
 
         rb.setHumanName("folly");
         assertEquals(rb.getHumanName(), "folly");
+
+        rb.setHumanName("");
+        assertEquals(rb.getHumanName(), "");
     }
 
     @Test
@@ -58,5 +61,29 @@ public class ResponseBankTest {
     public void quoteThrowsNoException() {
 
         rb.quote();
+    }
+
+    @Test
+    public void getHumanNameThrowsNoException() {
+
+        rb.getHumanName();
+    }
+
+    @Test
+    public void humanNameIsEmptyAtFirst() {
+
+        assertTrue(rb.getHumanName().isEmpty());
+    }
+
+    @Test
+    public void getANameReturnsAName() {
+
+        assertTrue(rb.getAName().equals("Bobby") || rb.getAName().equals("Susie") || rb.getAName().equals("Craig"));
+    }
+
+    @Test
+    public void quoteReturnsSomethingAtLeastButICantSayWhat() {
+
+        assertFalse(rb.quote().isEmpty());
     }
 }
