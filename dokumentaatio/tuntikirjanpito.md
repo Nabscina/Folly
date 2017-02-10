@@ -18,3 +18,4 @@ Päivä | Tunnit | Kuvaus
 07.02.2017 | 1h | ResponseBankille käyttöön luokka QuoteMaker, pari testiä
 09.02.2017 | 2h | Muutettiin graafiselle alustalle (+GUI ja ActionListening), eli mm. heivattiin Scanner
 09.02.2017 | 1h | Jokaiselle luokalle JavaDoc
+10.02.2017 | 45min | Parille metodille JavaDoc, uudet pit ja checkstyle, luokkakaaviotäydennys
