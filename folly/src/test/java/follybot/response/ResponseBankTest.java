@@ -76,9 +76,10 @@ public class ResponseBankTest {
     }
 
     @Test
-    public void getANameReturnsAName() {
+    public void getANameReturnsSomethingThatIsntNullOrEmpty() {
 
-        assertTrue(rb.getAName().equals("Bobby") || rb.getAName().equals("Susie") || rb.getAName().equals("Craig"));
+        assertTrue(rb.getAName() != null);
+        assertFalse(rb.getAName().isEmpty());
     }
 
     @Test

@@ -1,7 +1,7 @@
 package follybot.follybot;
 
 /**
- * Tämä luokka sisältää päällekkäistä toiminnallisuutta Folly-luokan kanssa, eli
+ * Tämä luokka sisältää vähän päällekkäistä toiminnallisuutta Folly-luokan kanssa, eli
  * palauttaa Follyn merkkijonovastauksen GUI-luokan käytettäväksi. Tuntuu vain
  * luonnolliselta, että käyttöliittymään liittyy keskustelu, ja keskusteluun
  * Folly.
