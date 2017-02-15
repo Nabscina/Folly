@@ -8,9 +8,9 @@ import javax.swing.JTextField;
 import javax.swing.WindowConstants;
 
 /**
- * Täällä luodaan ikkuna, jossa keskustelu käydään ja liitetään ikkunan tekstikentät
- * ActionListening-luokkaan, jotta uudet jutut päivittyvät ikkunaan. Luokalla on sen
- * mahdollistamiseksi yhteys Conversation-luokkaan.
+ * Täällä luodaan ikkuna, jossa keskustelu käydään ja liitetään ikkunan
+ * tekstikentät ActionListening-luokkaan, jotta uudet jutut päivittyvät
+ * ikkunaan. Luokalla on sen mahdollistamiseksi yhteys Conversation-luokkaan.
  */
 public class GUI implements Runnable {
 
@@ -36,6 +36,14 @@ public class GUI implements Runnable {
         frame.setVisible(true);
     }
 
+    /**
+     * Metodissa lisätään containeriin komponentteja, kuten ikkunan
+     * tekstikentät. Samalla muokataan komponenttien ominaisuuksia ja lisätään
+     * tapahtumankuuntelijat.
+     *
+     * @param container Container-olio, johon komponentit lisätään ja jotka
+     * frame saa käyttöönsä kun tätä metodia kutsutaan.
+     */
     private void components(Container container) {
 
         GridLayout layout = new GridLayout(3, 0);
@@ -59,6 +67,13 @@ public class GUI implements Runnable {
         addActionListeners(follysfield, humansfield);
     }
 
+    /**
+     * Luo ActionListening-olion ja lisää sen kummallekin tekstikentälle, mikä mahdollistaa
+     * niiden päivittymisen enteriä painettaessa.
+     * 
+     * @param follysfield Follyn tekstikenttä
+     * @param humansfield Käyttäjän "ihmisen" tekstikenttä
+     */
     private void addActionListeners(JTextField follysfield, JTextField humansfield) {
 
         ActionListening al = new ActionListening(follysfield, humansfield, convo);

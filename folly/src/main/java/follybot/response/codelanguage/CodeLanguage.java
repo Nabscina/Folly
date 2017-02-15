@@ -6,10 +6,11 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 /**
- * Tämä luokka lukee files-tiedostoja ja decryptaa niiden koodikielen, minkä jälkeen tiedostojen sisältö
- * palautetaan listana ResponseBankin käyttöön. Sisältää metodin myös encryptaamiselle,
- * vaikka ohjelma ei sitä ominaisuutta käytäkään (minä käytän).
- * Hyödyntää HashMappia, jossa jokaista merkkiä vastaa jokin eri merkki.
+ * Tämä luokka lukee files-tiedostoja ja decryptaa niiden koodikielen, minkä
+ * jälkeen tiedostojen sisältö palautetaan listana ResponseBankin käyttöön.
+ * Sisältää metodin myös encryptaamiselle, vaikka ohjelma ei sitä ominaisuutta
+ * käytäkään (minä käytän). Hyödyntää HashMappia, jossa jokaista merkkiä vastaa
+ * jokin eri merkki.
  */
 public class CodeLanguage {
 
@@ -28,6 +29,16 @@ public class CodeLanguage {
         }
     }
 
+    /**
+     * Muuntaa normaalia kieltä koodiksi käymällä jokaisen merkkijonon s
+     * kirjaimen läpi, hakemalla sen avaimena HashMapista ja lisäämällä
+     * merkkijonoon ret sitä vastaavan arvon (tai merkin ?, jos avainta ei
+     * löydy).
+     *
+     * @param s koodiksi muunnettava merkkijono.
+     *
+     * @return koodiksi muunnettu merkkijono.
+     */
     public String normalToCode(String s) {
 
         String ret = "";
@@ -43,6 +54,17 @@ public class CodeLanguage {
         return ret;
     }
 
+    /**
+     * Muuntaa koodia normaaliksi kieleksi käymällä jokaisen merkkijonon s
+     * kirjaimen läpi ja aloittaa jokaisen kohdalla toisen loopin (eläköön
+     * O(n²)), joka käy HashMapin avaimet läpi ja tarkistaa, vastaako
+     * senhetkinen kirjain avaimen arvoa, missä tapauksessa avain lisätään
+     * palautettavaan merkkijonoon ret.
+     *
+     * @param s normaaliksi kieleksi muunnettava koodimerkkijono.
+     *
+     * @return muunnettu merkkijono.
+     */
     public String codeToNormal(String s) {
 
         String ret = "";
@@ -58,6 +80,17 @@ public class CodeLanguage {
         return ret;
     }
 
+    /**
+     * Luo uuden Scanner-olion, joka annetaan tyhjän ArrayListin kanssa
+     * addToList-metodille. Ympäröity try-catchilla siltä varalta, että
+     * filename-nimistä tiedostoa tai määriteltyä tiedostopolkua ei löydy.
+     * Epäonnistuminen tulostaa "", eli ei mitään.
+     *
+     * @param filename polku tiedostoon, jota yritetään lukea.
+     *
+     * @return addToListin luoma lista tai uusi, tyhjä lista, jos tiedoston
+     * lukeminen epäonnistui.
+     */
     public ArrayList<String> codeToNormalList(String filename) {
 
         try {
@@ -70,6 +103,18 @@ public class CodeLanguage {
         return new ArrayList<>();
     }
 
+    /**
+     * Tänne tullaan codeToNormalList-metodin tiedostontunnistamisen
+     * onnistuessa, jolloin voidaan lukea tiedoston sisältöä Scannerilla ja
+     * lisätä jokainen rivi erikseen ArrayListiin.
+     *
+     * @param reader codeToNormalList-metodin luoma Scanner-olio, jolla luetaan
+     * tiedostoa.
+     * @param list tyhjä lista, johon Scannerin lukema tiedosto lisätään rivi
+     * riviltä.
+     *
+     * @return lista, kun jokainen tiedoston rivi on luettu ja lisätty.
+     */
     public ArrayList<String> addToList(Scanner reader, ArrayList<String> list) {
 
         while (reader.hasNextLine()) {
