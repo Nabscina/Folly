@@ -36,7 +36,7 @@ public class ConversationTest {
     public void answerTest1() {
 
         assertTrue(c.converse("Name").contains("Name"));
-        assertEquals("Bye.", c.converse("bye"));
+        assertEquals("Bye. Press enter to leave.", c.converse("bye"));
         assertEquals("-2.", c.converse("3-5"));
     }
 }

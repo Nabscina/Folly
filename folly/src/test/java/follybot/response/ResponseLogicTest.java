@@ -35,10 +35,10 @@ public class ResponseLogicTest {
     @Test
     public void byeReturnsBye() {
 
-        assertEquals(rl.respond("bye"), "Bye.");
-        assertEquals(rl.respond("BYE!"), "Bye.");
-        assertEquals(rl.respond("by(¤#¤)e"), "Bye.");
-        assertEquals(rl.respond("b.Y.E"), "Bye.");
+        assertEquals(rl.respond("bye"), "Bye. Press enter to leave.");
+        assertEquals(rl.respond("BYE!"), "Bye. Press enter to leave.");
+        assertEquals(rl.respond("by(¤#¤)e"), "Bye. Press enter to leave.");
+        assertEquals(rl.respond("b.Y.E"), "Bye. Press enter to leave.");
     }
 
     @Test

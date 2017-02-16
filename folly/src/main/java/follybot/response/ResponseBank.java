@@ -23,6 +23,8 @@ public class ResponseBank {
     private ArrayList<String> quotes1;
     private ArrayList<String> quotes2;
     private ArrayList<String> words;
+    private ArrayList<String> yesornoanswers;
+    private ArrayList<String> otheranswers;
 
     private CodeLanguage cl;
     private QuoteMaker qm;
@@ -38,6 +40,8 @@ public class ResponseBank {
         quotes1 = cl.codeToNormalList("src/main/java/follybot/response/files/quotes1.txt");
         quotes2 = cl.codeToNormalList("src/main/java/follybot/response/files/quotes2.txt");
         words = cl.codeToNormalList("src/main/java/follybot/response/files/words.txt");
+        yesornoanswers = cl.codeToNormalList("src/main/java/follybot/response/files/yesornoanswers.txt");
+        otheranswers = cl.codeToNormalList("src/main/java/follybot/response/files/otheranswers.txt");
     }
 
     /**
@@ -54,6 +58,18 @@ public class ResponseBank {
         Collections.shuffle(quotes2);
         Collections.shuffle(words);
         return qm.makeAQuote(quotes1.get(0) + quotes2.get(0), words, humanName);
+    }
+
+    public String answerAPolarQuestion() {
+
+        Collections.shuffle(yesornoanswers);
+        return qm.makeAQuote(yesornoanswers.get(0), words, humanName);
+    }
+
+    public String answerSomeOtherQuestion() {
+
+        Collections.shuffle(otheranswers);
+        return qm.makeAQuote(otheranswers.get(0), words, humanName);
     }
 
     /**

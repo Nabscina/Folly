@@ -45,7 +45,7 @@ public class FollyTest {
     public void responseTest() {
 
         assertTrue(folly.respond("Name").contains("Name"));
-        assertTrue(folly.respond("Bye").equals("Bye."));
+        assertTrue(folly.respond("Bye").equals("Bye. Press enter to leave."));
         assertTrue(folly.respond("100*1000").equals("100000."));
         assertTrue(folly.respond("100/0").equals("DO NOT DIVIDE BY ZERO! EVER!"));
         assertFalse(folly.respond("").isEmpty());

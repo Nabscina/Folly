@@ -76,7 +76,7 @@ public class GUI implements Runnable {
      */
     private void addActionListeners(JTextField follysfield, JTextField humansfield) {
 
-        ActionListening al = new ActionListening(follysfield, humansfield, convo);
+        ActionListening al = new ActionListening(frame, follysfield, humansfield, convo);
 
         follysfield.addActionListener(al);
         humansfield.addActionListener(al);

@@ -1,6 +1,7 @@
 package follybot.response;
 
 import follybot.response.math.BotMath;
+import follybot.response.question.BotQuestion;
 import java.util.Random;
 
 /**
@@ -14,12 +15,14 @@ public class ResponseLogic {
     private ResponseBank rb;
     private BotMath math;
     private Random random;
+    private BotQuestion bq;
 
     public ResponseLogic() {
 
         this.rb = new ResponseBank();
         this.math = new BotMath();
         this.random = new Random();
+        this.bq = new BotQuestion(rb);
     }
 
     /**
@@ -33,10 +36,12 @@ public class ResponseLogic {
      */
     public String respond(String question) {
 
-        if (simplified(question).equals("bye")) {
-            return "Bye.";
-        } else if (math.mathCheck(question)) {
+        if (math.mathCheck(question)) {
             return math.doMath(question).toString();
+        } else if (simplified(question).equals("bye")) {
+            return "Bye. Press enter to leave.";
+        } else if (bq.questionCheck(question)) {
+            return bq.answerQuestion(question);
         }
 
         return rb.quote();
@@ -116,11 +121,12 @@ public class ResponseLogic {
     }
 
     /**
-     * Poistaa merkkijonosta kaikki merkit, jotka eivät ole kirjaimia a-z tai A-Z (korvaa nämä tyhjällä
-     * replaceAll()-metodia hyödyntäen) ja vaihtaa myös kaikki kirjaimet pieniksi metodilla toLowerCase().
-     * 
+     * Poistaa merkkijonosta kaikki merkit, jotka eivät ole kirjaimia a-z tai
+     * A-Z (korvaa nämä tyhjällä replaceAll()-metodia hyödyntäen) ja vaihtaa
+     * myös kaikki kirjaimet pieniksi metodilla toLowerCase().
+     *
      * @param question Käyttäjän "kysymys", eli syöte, joka "simplifoidaan".
-     * 
+     *
      * @return simplifoitu versio käyttäjän syötteestä.
      */
     public String simplified(String question) {
