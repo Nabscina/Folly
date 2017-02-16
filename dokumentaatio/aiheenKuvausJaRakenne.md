@@ -16,3 +16,11 @@
 
 
 ![class diagram](luokkakaavio.png)
+
+**Sekvenssikaavioita käyttötapauksista:**
+
+![1rd](kayttotapaus1.png)
+
+![2st](kayttotapaus2.png)
+
+![3nd](kayttotapaus3.png)
