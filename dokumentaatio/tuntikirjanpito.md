@@ -21,3 +21,4 @@ Päivä | Tunnit | Kuvaus
 10.02.2017 | 45min | Parille metodille JavaDoc, uudet pit ja checkstyle, luokkakaaviotäydennys
 15.02.2017 | 1h | Kirjoitettiin JavaDocceja julkisille metodeille
 16.02.2017 | 1,5h | BotQuestion-luokka, sen käyttämät tiedostot ja ikkunan sulkeminen onnistuu nyt myös sanomalla bye.
+16.02.2017 | 2h | Piirrettiin sekvenssikaaviot kolmesta eri käyttötapauksesta.
