@@ -11,6 +11,8 @@ public class Main {
     /**
      * main-metodi alustaa uuden GUI:n ja kutsuu metodia run(), ja sitä mukaan
      * muutkin luokat tulevat mukaan.
+     *
+     * @param args komentorivin argumentit.
      */
     public static void main(String[] args) {
 

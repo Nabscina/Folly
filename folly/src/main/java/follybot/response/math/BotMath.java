@@ -116,7 +116,7 @@ public class BotMath {
      * Ensimmäinen "siistitylle" (createMathExpression suoritettu) lausekkeelle
      * suoritettava tarkastus, jossa katsotaan, onko siinä symboleja +, -, * tai
      * / muualla kuin alussa, eli lähdetäänkö yrittämään sen tatkaisua ("-5" ei
-     * mene läpi, yksi miinus alussa, "5" ei mene läpi, ei symboleja.)
+     * mene läpi, yksi miinus alussa, "5" ei mene läpi, ei symboleja).
      *
      * @param line käyttäjän syöte, joka on siistitty metodilla
      * createMathExpression.
