@@ -22,3 +22,4 @@ Päivä | Tunnit | Kuvaus
 15.02.2017 | 1h | Kirjoitettiin JavaDocceja julkisille metodeille
 16.02.2017 | 1,5h | BotQuestion-luokka, sen käyttämät tiedostot ja ikkunan sulkeminen onnistuu nyt myös sanomalla bye.
 16.02.2017 | 2h | Piirrettiin sekvenssikaaviot kolmesta eri käyttötapauksesta.
+17.02.2017 | 3h | Checkstyle katsoo JavaDocit, JavaDocit lähes kaikille metodeille. Ei ehtinyt edes testejä BotQuestionille.
