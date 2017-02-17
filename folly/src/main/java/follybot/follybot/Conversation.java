@@ -10,14 +10,21 @@ public class Conversation {
 
     private Folly folly;
 
+    /**
+     * Alustetaan folly-oliomuuttuja, palauttaa Conversation-olion.
+     */
     public Conversation() {
 
         folly = new Folly();
     }
 
     /**
-     * @param line käyttäjän syöte
-     * @return Follyn vastaus syötteeseen
+     * Kutsuu follyn metodia respond(line) ja palauttaa vastauksen
+     * ActionListening-luokalle.
+     *
+     * @param line käyttäjän syöte.
+     *
+     * @return Follyn vastaus syötteeseen.
      */
     public String converse(String line) {
 

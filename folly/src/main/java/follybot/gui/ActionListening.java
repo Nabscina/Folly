@@ -9,8 +9,9 @@ import javax.swing.JTextField;
 
 /**
  * Tapahtumankuuntelija, eli kun tapahtuma tapahtuu (painetaan enteriä),
- * actionPerformed päivittää tekstikentät. Myös Follyn fontin värin asetus käy
- * kätevästi samalla kun se vaihtuu vasta kun käyttäjän nimi on tiedossa.
+ * actionPerformed päivittää tekstikentät + voi myös sulkea ikkunan Follyn
+ * tekstikentän perusteella. Myös Follyn fontin värin asetus käy kätevästi
+ * samalla kun se vaihtuu vasta kun käyttäjän nimi on tiedossa.
  */
 public class ActionListening implements ActionListener {
 
@@ -20,6 +21,16 @@ public class ActionListening implements ActionListener {
 
     private Conversation convo;
 
+    /**
+     * Asetetaan parametreinä saadut frame, folly, human ja convo oliomuuttujien
+     * arvoiksi, palauttaa ActionListening-olion.
+     *
+     * @param frame GUI-luokan JFrame-olio.
+     * @param folly Follyn tekstikenttä.
+     * @param human käyttäjän tekstikenttä.
+     * @param convo Conversation-olio, jolta saadaan Follyn tekstikenttään
+     * asetettava vastaus.
+     */
     public ActionListening(JFrame frame, JTextField folly, JTextField human, Conversation convo) {
 
         this.follysfield = folly;
@@ -30,11 +41,11 @@ public class ActionListening implements ActionListener {
     }
 
     /**
-     * Metodi päivittää Follyn tekstikenttään vastauksen käyttäjälle, sekä myös
-     * tyhjentää käyttäjän tekstikentän uutta kysymystä varten, sekä myös
-     * muuttaa Follyn tekstin väriä kun metodia ekan kerran kutsutaan (nimen
-     * antamisen jälkeen). Voisi toteuttaa boolean-tarkastuksen niin se
-     * tehtäisiin vain kerran.
+     * Metodi päivittää Follyn tekstikenttään vastauksen käyttäjälle ja
+     * tyhjentää käyttäjän tekstikentän uutta syötettä varten, sekä myös muuttaa
+     * Follyn tekstin väriä kun metodia ekan kerran kutsutaan (nimen antamisen
+     * jälkeen) ja tekee Follyn tekstikentälle tarkistuksen, jonka perusteella
+     * voidaan sulkea ikkuna ja lopettaa ohjelma.
      *
      * @param ae tällainen ActionEvent generoidaan, kun enteriä painetaan. Emme
      * nyt kyllä tee sillä mitään.
@@ -52,6 +63,14 @@ public class ActionListening implements ActionListener {
         this.humansfield.setText("");
     }
 
+    /**
+     * Tarkistetaan, lukeeko Follyn tekstikentässä equalsin jälkeinen lause (jos
+     * lukee, ikkuna suljetaan).
+     *
+     * @param follysline teksti Follyn tekstikentässä.
+     *
+     * @return true jos tekstikentän sisältö on tuo lause, muuten false.
+     */
     public boolean windowDisposeCheck(String follysline) {
 
         return follysline.equals("Bye. Press enter to leave.");

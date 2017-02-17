@@ -8,15 +8,18 @@ import javax.swing.JTextField;
 import javax.swing.WindowConstants;
 
 /**
- * Täällä luodaan ikkuna, jossa keskustelu käydään ja liitetään ikkunan
+ * Täällä luodaan ikkuna, jossa keskustelu käydään, ja liitetään ikkunan
  * tekstikentät ActionListening-luokkaan, jotta uudet jutut päivittyvät
- * ikkunaan. Luokalla on sen mahdollistamiseksi yhteys Conversation-luokkaan.
+ * ikkunaan.
  */
 public class GUI implements Runnable {
 
     private JFrame frame;
     private Conversation convo;
 
+    /**
+     * Alustetaan uusi Conversatioin-olio, palauttaa GUI-olion.
+     */
     public GUI() {
 
         convo = new Conversation();
@@ -68,11 +71,11 @@ public class GUI implements Runnable {
     }
 
     /**
-     * Luo ActionListening-olion ja lisää sen kummallekin tekstikentälle, mikä mahdollistaa
-     * niiden päivittymisen enteriä painettaessa.
-     * 
-     * @param follysfield Follyn tekstikenttä
-     * @param humansfield Käyttäjän "ihmisen" tekstikenttä
+     * Luo ActionListening-olion ja lisää sen kummallekin tekstikentälle, mikä
+     * mahdollistaa niiden päivittymisen enteriä painettaessa.
+     *
+     * @param follysfield Follyn tekstikenttä.
+     * @param humansfield Käyttäjän "ihmisen" tekstikenttä.
      */
     private void addActionListeners(JTextField follysfield, JTextField humansfield) {
 

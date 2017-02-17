@@ -18,6 +18,12 @@ public class CodeLanguage {
     private String characters;
     private String charactersShuffled;
 
+    /**
+     * alustaa HashMap-olion, johon talletetaan loopissa avaimiksi
+     * this.characters-merkkijonon kirjaimet ja arvoiksi
+     * this.charactersShuffled-merkkijonon kirjaimet. Palauttaa
+     * CodeLanguage-olion.
+     */
     public CodeLanguage() {
 
         this.map = new HashMap<>();
@@ -56,8 +62,8 @@ public class CodeLanguage {
 
     /**
      * Muuntaa koodia normaaliksi kieleksi käymällä jokaisen merkkijonon s
-     * kirjaimen läpi ja aloittaa jokaisen kohdalla toisen loopin (eläköön
-     * O(n²)), joka käy HashMapin avaimet läpi ja tarkistaa, vastaako
+     * kirjaimen läpi ja aloittaa jokaisen kohdalla toisen loopin (aikavaativuus
+     * O(feelsbadman)), joka käy HashMapin avaimet läpi ja tarkistaa, vastaako
      * senhetkinen kirjain avaimen arvoa, missä tapauksessa avain lisätään
      * palautettavaan merkkijonoon ret.
      *
@@ -89,7 +95,7 @@ public class CodeLanguage {
      * @param filename polku tiedostoon, jota yritetään lukea.
      *
      * @return addToListin luoma lista tai uusi, tyhjä lista, jos tiedoston
-     * lukeminen epäonnistui.
+     * lukeminen epäonnistui (mutta ei se epäonnistu, dw).
      */
     public ArrayList<String> codeToNormalList(String filename) {
 

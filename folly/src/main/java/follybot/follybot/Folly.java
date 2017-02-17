@@ -13,6 +13,10 @@ public class Folly {
 
     private boolean introductionIsDone;
 
+    /**
+     * Alustetaan ResponseLogic-oliomuuttuja ja asetetaan introductionIsDonen
+     * arvoksi false, palauttaa Folly-olion.
+     */
     public Folly() {
 
         this.rl = new ResponseLogic();
@@ -25,9 +29,9 @@ public class Folly {
      * hyödyntää muita tsydeemejä sopivan vastauksen löytämiseksi, ja tämä
      * sitten palauttaa vastauksen merkkijonona.
      *
-     * @param q käyttäjän antama syöte (q niin kuin question)
+     * @param q käyttäjän antama syöte (q niin kuin question).
      *
-     * @return joko reagointi nimivalintaan tai vastaus muuhun syötteeseen
+     * @return joko reagointi nimivalintaan tai vastaus muuhun syötteeseen.
      */
     public String respond(String q) {
 
@@ -40,9 +44,10 @@ public class Folly {
     }
 
     /**
-     * Metodi antaa (vaikka toiselle luokalle) tiedon siitä, onko esittäytyminen tehty.
+     * Metodi antaa (vaikka toiselle luokalle) tiedon siitä, onko esittäytyminen
+     * tehty.
      *
-     * @return introductionIsDone-booleanin tila
+     * @return introductionIsDone-booleanin tila.
      */
     public boolean introductionIsDone() {
 

@@ -7,11 +7,11 @@ import follybot.response.quotemaker.QuoteMaker;
 
 /**
  * Vastauspankki, eli (ehkä vähän nimensä vastaisesti?) palauttaa
- * ResponseLogicin valitsemasta listasta jotain sanottavaa. Joka tapauksessa
- * tallettaa listoihin sisällön files-pakkauksen tidostoista, mitä lähinnä
- * tarkoitan vastauspankilla. Shufflaa myös listat ennen palautusta, niin
- * saadaan satunnaisuutta. Tallettaa käyttäjän nimen, koska sitä tarvitsee
- * joissain vastauksissa.
+ * ResponseLogicin tai BotQuestionin valitsemasta listasta jotain sanottavaa.
+ * Joka tapauksessa tallettaa listoihin sisällön files-pakkauksen tidostoista,
+ * mitä lähinnä tarkoitan vastauspankilla. Shufflaa myös listat ennen
+ * palautusta, niin saadaan satunnaisuutta. Tallettaa käyttäjän nimen, koska
+ * sitä tarvitaan joissain vastauksissa.
  */
 public class ResponseBank {
 
@@ -29,6 +29,12 @@ public class ResponseBank {
     private CodeLanguage cl;
     private QuoteMaker qm;
 
+    /**
+     * Alustaa uudet CodeLanguage- ja QuoteMaker-oliot luokan käyttöön,
+     * hyödyntää CodeLanguage-luokan codeToNormalList-metodia ja tallentaa
+     * ArrayListiin sisällön metodille parametrina annetusta tiedostosta.
+     * Palauttaa ResponseBank-olion.
+     */
     public ResponseBank() {
 
         cl = new CodeLanguage();
@@ -46,10 +52,10 @@ public class ResponseBank {
 
     /**
      * Sekoittaa kaikki palautettavaan lauseeseen tarvittavat listat (toimii
-     * random-elementtinä).
+     * ikään kuin random-elementtinä).
      *
      * @return hyödyntää QuoteMakeria, joka saattaa muokata parametrinä
-     * annettujen listojen ensimmäisestä alkiosta koostuvaa lausetta, ja joka
+     * annettujen listojen ensimmäisistä alkioista koostuvaa lausetta, ja joka
      * palauttaa uuden lauseen, jonka tämä välittää eteenpäin.
      */
     public String quote() {
@@ -60,12 +66,28 @@ public class ResponseBank {
         return qm.makeAQuote(quotes1.get(0) + quotes2.get(0), words, humanName);
     }
 
+    /**
+     * Sekoittaa yesornoanswers-listan kyllä tai ei -kysymykseen vastaamista
+     * varten.
+     *
+     * @return hyödyntää QuoteMakeria, joka voi satunnaisesti lisätä sille
+     * annettavan lauseen perään käyttäjän nimen, ja jonka se sitten palauttaa
+     * tälle.
+     */
     public String answerAPolarQuestion() {
 
         Collections.shuffle(yesornoanswers);
         return qm.makeAQuote(yesornoanswers.get(0), words, humanName);
     }
 
+    /**
+     * Sekoittaa otheranswers-listan ja vastaa kysymykseen, joka ei ole kyllä
+     * tai ei -ksymys.
+     *
+     * @return hyödyntää QuoteMakeria, joka voi satunnaisesti lisätä sille
+     * annettavan lauseen perään käyttäjän nimen, ja jonka se sitten palauttaa
+     * tälle.
+     */
     public String answerSomeOtherQuestion() {
 
         Collections.shuffle(otheranswers);

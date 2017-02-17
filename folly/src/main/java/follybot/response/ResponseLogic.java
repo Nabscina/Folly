@@ -7,8 +7,9 @@ import java.util.Random;
 /**
  * Tämä luokka tarkastelee sitä, mitä käyttäjä sanoo, ja pyrkii palauttamaan
  * siihen sopivan vastauksen, esimerkiksi jotain muuta loogista luokkaa
- * hyödyntämällä (BotMath). Voidaan mm. siistiä käyttäjän syötettä tai etsiä
- * kysymysmerkkiä. Hoitaa tarkastelun myös esittelyn osalta. Ehkä ei pitäisi.
+ * hyödyntämällä (BotMath, BotQuestion). Voidaan mm. siistiä käyttäjän syötettä
+ * tai etsiä kysymysmerkkiä. Hoitaa tarkastelun myös esittelyn osalta. Ehkä ei
+ * pitäisi.
  */
 public class ResponseLogic {
 
@@ -17,6 +18,10 @@ public class ResponseLogic {
     private Random random;
     private BotQuestion bq;
 
+    /**
+     * Alustaa oliot ResponseBank, BotMath, Random ja BotQuestion luokan
+     * käyttöön. Palauttaa ResponseLogic-olion.
+     */
     public ResponseLogic() {
 
         this.rb = new ResponseBank();
@@ -27,10 +32,13 @@ public class ResponseLogic {
 
     /**
      * Tutkii käyttäjän syötettä if-ehdoin ja tarkistaa muita luokkiakin
-     * hyödyntämällä, mikä vastaus kannattaa palauttaa. Tällä hetkellä jos
-     * huomataan, että sanottiin heippa, hyvästellään, jos ei huomattu,
-     * tarkistetaan, sisältääkö syöte matikkaa ja palautetaan vastaus
-     * tarvittaessa. Muussa tapauksessa palautetaan elämänohje eli rb.quote().
+     * hyödyntämällä, mikä vastaus kannattaa palauttaa. Jos huomataan, että
+     * syöte sisältää laskettavissa olevan matemaattisen lausekkeen, palautetaan
+     * ratkaisu, jos huomataan, että käyttäjä sanoo heippa, hyvästellään, ja jos
+     * kysytään muu kysymys, vastataan siihen. Muuten palautetaan "elämänohje"
+     * (rb.quote().)
+     *
+     * @param question käyttäjän syöte.
      *
      * @return if-ehdoilla sopivimmaksi todettu vastaus.
      */
@@ -48,6 +56,8 @@ public class ResponseLogic {
     }
 
     /**
+     * Hankkii ResponseBankista uuden satunnaisen nimen.
+     *
      * @return ResponseBank-luokasta uusi nimi merkkijonona.
      */
     public String newName() {
