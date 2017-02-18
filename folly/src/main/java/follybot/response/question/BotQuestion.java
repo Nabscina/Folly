@@ -27,7 +27,8 @@ public class BotQuestion {
         Collections.addAll(polars, "is ", "can ", "am i", "are ", "will ", "should ",
                 "could ", "would ", "isn't ", "can't ", "aren't ", "won't ", "shouldn't ",
                 "couldn't ", "wouldn't ", "does ", "doesn't ", "do ", "don't ", "must ",
-                "mustn't ", "may ", "shall ");
+                "mustn't ", "may ", "shall ", "have ", "has ", "haven't ", "hasn't ",
+                "did ", "didn't ", "had ", "hadn't ", "was ", "wasn't ", "were ", "weren't ");
     }
 
     /**
