@@ -12,6 +12,7 @@ public class BotQuestion {
 
     private ArrayList<String> polars;
     private ResponseBank rb;
+    private QuestionTracker qt;
 
     /**
      * Alustaa oliomuuttujan rb ja ArrayListin, johon lisätään sanoja, joilla
@@ -23,6 +24,7 @@ public class BotQuestion {
     public BotQuestion(ResponseBank rb) {
 
         this.rb = rb;
+        qt = new QuestionTracker();
         polars = new ArrayList<>();
         Collections.addAll(polars, "is ", "can ", "am i", "are ", "will ", "should ",
                 "could ", "would ", "isn't ", "can't ", "aren't ", "won't ", "shouldn't ",
@@ -47,7 +49,10 @@ public class BotQuestion {
 
     /**
      * Metodi päättää, vastataanko kyllä tai ei -kysymykseen vai muuhun
-     * kysymykseen polarQuestionCheck()-metodin avulla.
+     * kysymykseen polarQuestionCheck()-metodin avulla. Jos check menee läpi,
+     * lisätään kysymys ja Follyn vastaus QuestionTracker-luokan mappiin
+     * (yritetään, luokka voi torjua lisäyksen) ja palautetaan sinne tallennettu
+     * vastaus.
      *
      * @param question käyttäjän syöte.
      *
@@ -57,7 +62,9 @@ public class BotQuestion {
     public String answerQuestion(String question) {
 
         if (polarQuestionCheck(question)) {
-            return rb.answerAPolarQuestion();
+            String answer = rb.answerAPolarQuestion();
+            qt.addAnswer(question, answer);
+            return qt.getAnswer(question);
         } else {
             return rb.answerSomeOtherQuestion();
         }
