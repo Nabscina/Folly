@@ -45,7 +45,10 @@ public class ActionListening implements ActionListener {
      * tyhjentää käyttäjän tekstikentän uutta syötettä varten, sekä myös muuttaa
      * Follyn tekstin väriä kun metodia ekan kerran kutsutaan (nimen antamisen
      * jälkeen) ja tekee Follyn tekstikentälle tarkistuksen, jonka perusteella
-     * voidaan sulkea ikkuna ja lopettaa ohjelma.
+     * voidaan sulkea ikkuna ja lopettaa ohjelma. Metodista lähdetään vitun
+     * äkkiä pois jos käyttäjä syöttää tyhjää (eikä olla hyvästelty ensin), eli
+     * tyhjä syöte ei saa vastausta, eikä esim. tyhjän nimen syöttäminen
+     * onnistu.
      *
      * @param ae tällainen ActionEvent generoidaan, kun enteriä painetaan. Emme
      * nyt kyllä tee sillä mitään.
@@ -54,13 +57,17 @@ public class ActionListening implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent ae) {
 
+        if (humansfield.getText().trim().equals("") && !windowDisposeCheck(follysfield.getText())) {
+            return;
+        }
+
         if (windowDisposeCheck(follysfield.getText())) {
             frame.dispose();
         }
 
-        this.follysfield.setForeground(Color.decode("#FF004F"));
-        this.follysfield.setText(convo.converse(this.humansfield.getText()));
-        this.humansfield.setText("");
+        follysfield.setForeground(Color.decode("#FF004F"));
+        follysfield.setText(convo.converse(humansfield.getText()));
+        humansfield.setText("");
     }
 
     /**
