@@ -25,3 +25,4 @@ Päivä | Tunnit | Kuvaus
 17.02.2017 | 3h | Checkstyle katsoo JavaDocit, JavaDocit lähes kaikille metodeille. Hidasta hommaa. Ei ehtinyt edes testejä BotQuestionille.
 20.02.2017 | 40min | QuestionTracker-luokka, jotta sama kysymys saa aina saman vastauksen, dokumentointi sille.
 22.02.2017 | 10min | Tyhjää syötettä ei enää käsitellä.
+23.02.2017 | 1h | Testejä BotQuestionille ja QuestionTrackerille
