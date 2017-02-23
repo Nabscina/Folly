@@ -56,5 +56,10 @@ public class QuestionTracker {
 
         return null;
     }
+    
+    public HashMap<String, String> getAnswersMap() {
+        
+        return answers;
+    }
 
 }

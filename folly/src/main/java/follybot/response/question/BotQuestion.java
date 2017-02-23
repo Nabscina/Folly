@@ -89,4 +89,9 @@ public class BotQuestion {
         }
         return false;
     }
+
+    public ArrayList<String> getPolarsList() {
+
+        return polars;
+    }
 }
