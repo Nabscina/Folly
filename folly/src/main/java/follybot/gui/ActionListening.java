@@ -58,6 +58,7 @@ public class ActionListening implements ActionListener {
     public void actionPerformed(ActionEvent ae) {
 
         if (humansfield.getText().trim().equals("") && !windowDisposeCheck(follysfield.getText())) {
+            humansfield.setText("");
             return;
         }
 
