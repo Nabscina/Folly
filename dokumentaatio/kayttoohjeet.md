@@ -1,4 +1,4 @@
-**Aja ohjelma.** Ensimmäisenä sinua pyydetään syöttämään nimi. Vaatimuksena on, että et saa syöttää tyhjää nimeä (painaa enteriä) tai välilyöntiä/välilyöntejä. Et saa myöskään käyttää nimeä Folly. Saat uuden nimen, jos teet näin.
+Aja ohjelma. **Ensimmäisenä sinua pyydetään syöttämään nimi.** Vaatimuksena on, että et saa syöttää tyhjää nimeä (painaa enteriä) tai välilyöntiä/välilyöntejä. Et saa myöskään käyttää nimeä Folly. Saat uuden nimen, jos teet näin.
 
 Folly puhuu englantia, ja jotta se osaisi vastata oikein, sinunkin pitäisi.
 Yleisesti pätee, että pelkkä enter ei kelpaa syötteeksi - **kirjoita siis aina edes jotain.**
