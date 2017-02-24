@@ -1,7 +1,7 @@
-Aja ohjelma. Ensimmäisenä sinua pyydetään syöttämään nimi. Vaatimuksena on, että et saa syöttää tyhjää nimeä (painaa enteriä) tai välilyöntiä/välilyöntejä. Et saa myöskään käyttää nimeä Folly. Saat uuden nimen, jos teet näin.
+**Aja ohjelma.** Ensimmäisenä sinua pyydetään syöttämään nimi. Vaatimuksena on, että et saa syöttää tyhjää nimeä (painaa enteriä) tai välilyöntiä/välilyöntejä. Et saa myöskään käyttää nimeä Folly. Saat uuden nimen, jos teet näin.
 
 Folly puhuu englantia, ja jotta se osaisi vastata oikein, sinunkin pitäisi.
-Yleisesti pätee, että pelkkä enter ei kelpaa syötteeksi - kirjoita siis aina edes jotain.
+Yleisesti pätee, että pelkkä enter ei kelpaa syötteeksi - **kirjoita siis aina edes jotain.**
 
 "Keskustelua" käydään siten, että kirjoitat tekstikenttään jotain ja painat enteriä, jolloin Follyn vastaus syötteeseen ilmestyy ylempään kenttään. Keskustelu on huono termi, sillä pääkäyttötapauksia ovat seuraavat:
 
@@ -21,4 +21,4 @@ Yleisesti pätee, että pelkkä enter ei kelpaa syötteeksi - kirjoita siis aina
 
 Voit myös antaa syötteitä, jotka eivät ole kysymyksiä tai sisällä matemaattista lauseketta. Tällöin Folly kertoo sinulle elämänohjeita.
 
-Kun olet saanut tarpeeksesi, voit sulkea ohjelman antamalla syötteeksi "bye". Myös esim. "Bye." tai "BYE!!!!" käy. Ohjelma sulkeutuu painettuasi vielä kerran enteriä.
+Kun olet saanut tarpeeksesi, **voit sulkea ohjelman antamalla syötteeksi "bye".** Myös esim. "Bye." tai "BYE!!!!" käy. Ohjelma sulkeutuu painettuasi vielä kerran enteriä.
