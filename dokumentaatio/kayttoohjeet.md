@@ -12,9 +12,12 @@ Yleisesti pätee, että pelkkä enter ei kelpaa syötteeksi - **kirjoita siis ai
   Ohjelma ymmärtää peruslaskutoimituksia, eli käytettävissäsi ovat plus-, miinus-, kerto- ja jakomerkit (+, -, *, / vastaavasti) sekä sulut [( ja )] ja joko pilkut tai pisteet desimaaliluvuissa. Voit kirjoittaa kaikki merkit ja numerot yhteen tai erottaa ne välilyönneillä. Syötteessäsi saa olla muuta tekstiä lausekkeen ohella. Alla esimerkkejä, joista kaikki antavat oikean vastauksen lausekkeeseen.
 
 "1 + 2 - 3"
-"1+1.15- (2 * 4,707 / 13)-25*2.22"
+
+"1+1.15- (2 * 4,707 / 13)-25 * 2.22"
+
 "Can you tell me what 45 - 44 - 43 * (3 / 2) is?"
-"askjbnaskjbasfkjb 5*25*0,5 amsnfkalfs"
+
+"askjbnaskjbasfkjb 5 * 25 * 0,5 amsnfkalfs"
 
 **3. Kysy kysymys, johon ei voi vastata kyllä tai ei.**
   Näihinkin on vastauksia, joskin ei informatiivisia vastauksia. Muista kuitenkin aina kysymysmerkki, kun kysyt jotain.
