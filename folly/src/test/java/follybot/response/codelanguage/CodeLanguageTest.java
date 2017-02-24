@@ -69,7 +69,7 @@ public class CodeLanguageTest {
     @Test
     public void codeToNormalListReadsExistingFile() {
 
-        ArrayList<String> list = cl.codeToNormalList("src/main/java/follybot/response/files/names.txt");
+        ArrayList<String> list = cl.codeToNormalList("names.txt");
         assertFalse(list.isEmpty());
     }
 }

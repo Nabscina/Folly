@@ -40,14 +40,14 @@ public class ResponseBank {
         cl = new CodeLanguage();
         qm = new QuoteMaker();
 
-        equals = cl.codeToNormalList("src/main/java/follybot/response/files/equalnameresponse.txt");
-        uniques = cl.codeToNormalList("src/main/java/follybot/response/files/uniquenameresponse.txt");
-        names = cl.codeToNormalList("src/main/java/follybot/response/files/names.txt");
-        quotes1 = cl.codeToNormalList("src/main/java/follybot/response/files/quotes1.txt");
-        quotes2 = cl.codeToNormalList("src/main/java/follybot/response/files/quotes2.txt");
-        words = cl.codeToNormalList("src/main/java/follybot/response/files/words.txt");
-        yesOrNoAnswers = cl.codeToNormalList("src/main/java/follybot/response/files/yesornoanswers.txt");
-        otherAnswers = cl.codeToNormalList("src/main/java/follybot/response/files/otheranswers.txt");
+        equals = cl.codeToNormalList("equalnameresponse.txt");
+        uniques = cl.codeToNormalList("uniquenameresponse.txt");
+        names = cl.codeToNormalList("names.txt");
+        quotes1 = cl.codeToNormalList("quotes1.txt");
+        quotes2 = cl.codeToNormalList("quotes2.txt");
+        words = cl.codeToNormalList("words.txt");
+        yesOrNoAnswers = cl.codeToNormalList("yesornoanswers.txt");
+        otherAnswers = cl.codeToNormalList("otheranswers.txt");
     }
 
     /**

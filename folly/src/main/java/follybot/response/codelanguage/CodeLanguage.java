@@ -1,12 +1,12 @@
 package follybot.response.codelanguage;
 
-import java.io.File;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 
 /**
- * Tämä luokka lukee files-tiedostoja ja decryptaa niiden koodikielen, minkä
+ * Tämä luokka lukee tiedostoja resources-kansiosta ja decryptaa niiden koodikielen, minkä
  * jälkeen tiedostojen sisältö palautetaan listana ResponseBankin käyttöön.
  * Sisältää metodin myös encryptaamiselle, vaikka ohjelma ei sitä ominaisuutta
  * käytäkään (minä käytän). Hyödyntää HashMappia, jossa jokaista merkkiä vastaa
@@ -100,7 +100,8 @@ public class CodeLanguage {
     public ArrayList<String> codeToNormalList(String filename) {
 
         try {
-            Scanner reader = new Scanner(new File(filename), "UTF-8");
+            InputStream is = getClass().getClassLoader().getResourceAsStream(filename);
+            Scanner reader = new Scanner(is);
             return addToList(reader, new ArrayList<>());
         } catch (Exception e) {
             System.out.print("");
