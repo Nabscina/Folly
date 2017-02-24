@@ -16,8 +16,11 @@
   * Botista ei ole syvälliseen keskusteluun, mutta saatat saada vastaukseksi hyviä elämänohjeita. Älä kuitenkaan noudata niitä kaikkia.
 * Sano "bye" (tai vaikka "BYE!!!!!!!!11") niin botti hyvästelee, ja sulkee ohjelman painettuasi enteriä
 
-
 ![class diagram](luokkakaavio.png)
+
+Ohjelma käynnistetään Main-luokan main-metodilla, joka kutsuu uuden GUI-olion run-metodia. Uuden GUIn kutsuminen luo instanssin ohjelman muista luokista seuraavassa järjestyksessä: Conversation, Folly, ResponseLogic, ResponseBank, CodeLanguage, QuoteMaker, BotMath, BotQuestion, QuestionTracker. Jäljelle jää ActionListening, joka alustetaan vasta run-metodin suorituksen yhteydessä. Kahden luokan välinen yhteys on aina yksi-yhteen-yhteys, eli mistään luokasta ei esimerkiksi luoda useampaa instanssia.
+
+Conversation on luokka, joka ikään kuin yhdistää ohjelman graafisen käyttöliittymän ja logiikkapuolen, joka liittyy Follyyn. GUI ja ActionListening ovat molemmat yhteydessä Conversation-luokkaan, kuten on myös Folly, johon yhdistyy ResponseLogic-luokan kautta useita muita luokkia, jotka auttavat käyttäjän syötteen analysoimisessa ja sopivan vastauksen antamisessa. Conversation siis välittää tämän vastauksen graafiselle puolelle.
 
 **Sekvenssikaavioita käyttötapauksista:**
 
