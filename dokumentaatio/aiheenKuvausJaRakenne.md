@@ -24,6 +24,8 @@ Conversation on luokka, joka ikään kuin yhdistää ohjelman graafisen käyttö
 
 **Sekvenssikaavioita käyttötapauksista:**
 
+Huom. sekvenssikaavioihin kuuluu nykyään myös QuestionTracker-luokka BotQuestionin vasemmalle puolelle, mutta seuraavissa käyttötapauksissa sitä ei käytetä.
+
 ![1rd](kayttotapaus1.png)
 
 ![2st](kayttotapaus2.png)
