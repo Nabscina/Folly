@@ -26,4 +26,4 @@ Päivä | Tunnit | Kuvaus
 20.02.2017 | 40min | QuestionTracker-luokka, jotta sama kysymys saa aina saman vastauksen, dokumentointi sille.
 22.02.2017 | 10min | Tyhjää syötettä ei enää käsitellä.
 23.02.2017 | 1h | Testejä BotQuestionille ja QuestionTrackerille
-24.02.2017 | 2h | Kirjoitettiin jonkin sortin rakennekuvaus ja käyttöohjeet, luotiin jar-tiedosto
+24.02.2017 | 2h | Kirjoitettiin jonkin sortin rakennekuvaus ja käyttöohjeet, luotiin jar-tiedosto, uudet pit ja checkstyle
