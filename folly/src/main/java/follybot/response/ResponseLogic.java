@@ -2,6 +2,7 @@ package follybot.response;
 
 import follybot.response.math.BotMath;
 import follybot.response.question.BotQuestion;
+import java.util.HashMap;
 import java.util.Random;
 
 /**
@@ -18,6 +19,8 @@ public class ResponseLogic {
     private Random random;
     private BotQuestion bq;
 
+    private HashMap<String, String> knownAnswers;
+
     /**
      * Alustaa oliot ResponseBank, BotMath, Random ja BotQuestion luokan
      * käyttöön. Palauttaa ResponseLogic-olion.
@@ -28,6 +31,9 @@ public class ResponseLogic {
         this.math = new BotMath();
         this.random = new Random();
         this.bq = new BotQuestion(rb);
+
+        knownAnswers = new HashMap<>();
+        addAnswers();
     }
 
     /**
@@ -44,7 +50,9 @@ public class ResponseLogic {
      */
     public String respond(String question) {
 
-        if (math.mathCheck(question)) {
+        if (knownAnswers.containsKey(simplified(question))) {
+            return knownAnswers.get(simplified(question));
+        } else if (math.mathCheck(question)) {
             return math.doMath(question).toString();
         } else if (simplified(question).equals("bye")) {
             return "Bye. Press enter to leave.";
@@ -142,5 +150,20 @@ public class ResponseLogic {
     public String simplified(String question) {
 
         return question.replaceAll("[^a-zA-Z]", "").toLowerCase();
+    }
+
+    private void addAnswers() {
+
+        knownAnswers.put("nevergonnagiveyouup", "Never gonna let you down.");
+        knownAnswers.put("nevergonnaletyoudown", "Never gonna run around.");
+        knownAnswers.put("nevergonnarunaround", "And desert you.");
+        knownAnswers.put("anddesertyou", "Never gonna make you cry.");
+        knownAnswers.put("nevergonnamakeyoucry", "Never gonna say goodbye.");
+        knownAnswers.put("nevergonnasaygoodbye", "Never gonna tell a lie.");
+        knownAnswers.put("nevergonnatellalie", "And hurt you.");
+        knownAnswers.put("whoyougonnacall", "GHOSTBUSTERS!");
+        knownAnswers.put("whatislove", "Baby don't hurt me.");
+        knownAnswers.put("babydonthurtme", "Don't hurt me.");
+        knownAnswers.put("donthurtme", "No more.");
     }
 }

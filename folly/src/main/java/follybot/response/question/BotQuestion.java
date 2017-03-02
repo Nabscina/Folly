@@ -3,6 +3,7 @@ package follybot.response.question;
 import follybot.response.ResponseBank;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 
 /**
  * Kysymyslogiikkaluokka, jota ResponseLogic saattaa käyttää käyttäjän syötteen
@@ -13,6 +14,8 @@ public class BotQuestion {
     private ArrayList<String> polars;
     private ResponseBank rb;
     private QuestionTracker qt;
+
+    private HashMap<String, String> knownAnswers;
 
     /**
      * Alustaa oliomuuttujan rb ja ArrayListin, johon lisätään sanoja, joilla
@@ -31,6 +34,9 @@ public class BotQuestion {
                 "couldn't ", "wouldn't ", "does ", "doesn't ", "do ", "don't ", "must ",
                 "mustn't ", "may ", "shall ", "have ", "has ", "haven't ", "hasn't ",
                 "did ", "didn't ", "had ", "hadn't ", "was ", "wasn't ", "were ", "weren't ");
+
+        knownAnswers = new HashMap<>();
+        addAnswers();
     }
 
     /**
@@ -93,5 +99,20 @@ public class BotQuestion {
     public ArrayList<String> getPolarsList() {
 
         return polars;
+    }
+
+    private void addAnswers() {
+
+        knownAnswers.put("never gonna give you up", "Never gonna let you down.");
+        knownAnswers.put("never gonna let you down", "Never gonna run around.");
+        knownAnswers.put("never gonna run around", "And desert you.");
+        knownAnswers.put("and desert you", "Never gonna make you cry.");
+        knownAnswers.put("never gonna make you cry", "Never gonna say goodbye.");
+        knownAnswers.put("never gonna say goodbye", "Never gonna tell a lie.");
+        knownAnswers.put("never gonna tell a lie", "And hurt you.");
+        knownAnswers.put("who you gonna call", "GHOSTBUSTERS!");
+        knownAnswers.put("what is love", "Baby don't hurt me.");
+        knownAnswers.put("baby don't hurt me", "Don't hurt me.");
+        knownAnswers.put("don't hurt me", "No more.");
     }
 }

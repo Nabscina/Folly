@@ -132,7 +132,7 @@ public class BotMathTest {
         assertEquals(bm.doMath("-1 / 0"), "DO NOT DIVIDE BY ZERO! EVER!");
         assertEquals(bm.doMath("-2 / -0"), "DO NOT DIVIDE BY ZERO! EVER!");
         assertEquals(bm.doMath("333 / (2 - 2) + 4"), "DO NOT DIVIDE BY ZERO! EVER!");
-        assertEquals(bm.doMath("0 / 0"), "DO NOT DIVIDE BY ZERO! EVER!");
+        assertEquals(bm.doMath("0 / 0"), "Are you trying to kill me or something?");
     }
 
     @Test
@@ -141,10 +141,10 @@ public class BotMathTest {
         assertEquals(bm.doMath("0 / -2"), "0.");
         assertEquals(bm.doMath("0.000 / -4,606"), "0.");
     }
-    
+
     @Test
     public void erroneousExpressionReturnsError() {
-        
+
         assertEquals(bm.doMath("0 /"), "ERROR");
         assertEquals(bm.doMath("dgsdgssgfhs"), "ERROR");
         assertEquals(bm.doMath("45 * kek"), "ERROR");

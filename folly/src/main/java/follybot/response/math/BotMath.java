@@ -73,10 +73,12 @@ public class BotMath {
 
         try {
             Object ret = this.engine.eval(expression);
-            if (ret.toString().equals("Infinity") || ret.toString().equals("-Infinity") || ret.toString().equals("NaN")) {
+            if (ret.toString().equals("Infinity") || ret.toString().equals("-Infinity")) {
                 return "DO NOT DIVIDE BY ZERO! EVER!";
             } else if (ret.toString().equals("-0.0")) {
                 return "0.";
+            } else if (ret.toString().equals("NaN")) {
+                return "Are you trying to kill me or something?";
             }
             return ret + ".";
         } catch (Exception e) {
