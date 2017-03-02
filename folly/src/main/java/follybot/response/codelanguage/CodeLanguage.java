@@ -101,7 +101,7 @@ public class CodeLanguage {
 
         try {
             InputStream is = getClass().getClassLoader().getResourceAsStream(filename);
-            Scanner reader = new Scanner(is);
+            Scanner reader = new Scanner(is, "UTF-8");
             return addToList(reader, new ArrayList<>());
         } catch (Exception e) {
             System.out.print("");
