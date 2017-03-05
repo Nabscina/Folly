@@ -6,6 +6,6 @@ Folly on botti, joka osaa monimutkaisia algoritmejä hyödyntämällä mm. vasta
 
 [tuntikirjanpito](dokumentaatio/tuntikirjanpito.md)
 
-[pit-raportti](https://htmlpreview.github.io/?https://github.com/Nabscina/FollyBot/blob/master/dokumentaatio/pit-raportti/201702241940/index.html)
+[pit-raportti](https://htmlpreview.github.io/?https://github.com/Nabscina/FollyBot/blob/master/dokumentaatio/pit-raportti/201703050148/index.html)
 
 [checkstyle-raportti](https://htmlpreview.github.io/?https://github.com/Nabscina/FollyBot/blob/master/dokumentaatio/checkstyle-raportti/checkstyle.html)
