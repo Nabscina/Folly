@@ -20,10 +20,11 @@ Päivä | Tunnit | Kuvaus
 09.02.2017 | 1h | Jokaiselle luokalle JavaDoc
 10.02.2017 | 45min | Parille metodille JavaDoc, uudet pit ja checkstyle, luokkakaaviotäydennys
 15.02.2017 | 1h | Kirjoitettiin JavaDocceja julkisille metodeille
-16.02.2017 | 1,5h | BotQuestion-luokka, sen käyttämät tiedostot ja ikkunan sulkeminen onnistuu nyt myös sanomalla bye.
-16.02.2017 | 2h | Piirrettiin sekvenssikaaviot kolmesta eri käyttötapauksesta.
-17.02.2017 | 3h | Checkstyle katsoo JavaDocit, JavaDocit lähes kaikille metodeille. Hidasta hommaa. Ei ehtinyt edes testejä BotQuestionille.
-20.02.2017 | 40min | QuestionTracker-luokka, jotta sama kysymys saa aina saman vastauksen, dokumentointi sille.
-22.02.2017 | 10min | Tyhjää syötettä ei enää käsitellä.
+16.02.2017 | 1,5h | BotQuestion-luokka, sen käyttämät tiedostot ja ikkunan sulkeminen onnistuu nyt myös sanomalla bye
+16.02.2017 | 2h | Piirrettiin sekvenssikaaviot kolmesta eri käyttötapauksesta
+17.02.2017 | 3h | Checkstyle katsoo JavaDocit, JavaDocit lähes kaikille metodeille. Hidasta hommaa. Ei ehtinyt edes testejä BotQuestionille
+20.02.2017 | 40min | QuestionTracker-luokka, jotta sama kysymys saa aina saman vastauksen, dokumentointi sille
+22.02.2017 | 10min | Tyhjää syötettä ei enää käsitellä
 23.02.2017 | 1h | Testejä BotQuestionille ja QuestionTrackerille
 24.02.2017 | 2h | Kirjoitettiin jonkin sortin rakennekuvaus ja käyttöohjeet, luotiin jar-tiedosto, uudet pit ja checkstyle
+05.03.2017 | 1h | Generoitiin JavaDoc, uudet pit ja checkstyle
