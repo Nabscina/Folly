@@ -1,0 +1,7 @@
+follybot.follybot
+follybot.gui
+follybot.response
+follybot.response.codelanguage
+follybot.response.math
+follybot.response.question
+follybot.response.quotemaker
